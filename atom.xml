@@ -5,12 +5,12 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://smithedwin201.github.io/"/>
   <updated>2018-06-19T09:06:17.911Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://smithedwin201.github.io/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>杨天波</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>title</title>
-    <link href="http://yoursite.com/2018/06/19/title/"/>
-    <id>http://yoursite.com/2018/06/19/title/</id>
+    <link href="https://smithedwin201.github.io/2018/06/19/title/"/>
+    <id>https://smithedwin201.github.io/2018/06/19/title/</id>
     <published>2018-06-19T09:05:50.000Z</published>
     <updated>2018-06-19T09:06:17.911Z</updated>
     
@@ -40,8 +40,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2018/06/19/hello-world/"/>
-    <id>http://yoursite.com/2018/06/19/hello-world/</id>
+    <link href="https://smithedwin201.github.io/2018/06/19/hello-world/"/>
+    <id>https://smithedwin201.github.io/2018/06/19/hello-world/</id>
     <published>2018-06-19T07:38:10.689Z</published>
     <updated>2018-06-19T09:35:50.769Z</updated>
     
