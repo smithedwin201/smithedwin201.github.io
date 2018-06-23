@@ -12,21 +12,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 <meta name="theme-color" content="#222">
 
-<div id="container"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-  id: '页面 ID', // 可选。默认为 location.href
-  owner: 'smithedwin201',
-  repo: 'https://smithedwin201.github.io',
-  oauth: {
-    client_id: '6f99b38be314ce4cc85c',
-    client_secret: '921bf547c0360c382153220ab132754865d2793d',
-  },
-})
-gitment.render('container')
-</script>
+
 
 
 
@@ -339,17 +325,6 @@ gitment.render('container')
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/06/19/title/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/06/19/title/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -469,12 +444,7 @@ var jiathis_config={
 
   
     <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
+      <div id="lv-container" data-id="city" data-uid="MTAyMC8zNzU1MC8xNDA4Mg=="></div>
     </div>
 
   
@@ -698,17 +668,7 @@ var jiathis_config={
   <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
 
 
-  <script type="text/javascript">
-    var disqus_config = function () {
-      this.page.url = 'https://smithedwin201.github.io/2018/06/19/title/';
-      this.page.identifier = '2018/06/19/title/';
-      this.page.title = 'title';
-    };
-    var d = document, s = d.createElement('script');
-    s.src = 'https://edwin.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', '' + +new Date());
-    (d.head || d.body).appendChild(s);
-  </script>
+
   
   
 
@@ -737,16 +697,6 @@ var jiathis_config={
 
   
 
-    
-      <script id="dsq-count-scr" src="https://edwin.disqus.com/count.js" async></script>
-    
-
-    
-     
-    
-
-  
-
 
 
 
@@ -759,6 +709,21 @@ var jiathis_config={
   
 
 
+
+
+
+  
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
 
 
 
@@ -822,12 +787,10 @@ var jiathis_config={
     <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
-   
-
 
   
 
   
-   
+
 </body>
 </html>
