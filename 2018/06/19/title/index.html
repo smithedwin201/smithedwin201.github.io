@@ -808,7 +808,21 @@ var jiathis_config={
     <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
-
+    <div id="container"></div>
+    <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+    var gitment = new Gitment({
+      id: '页面 ID', // 可选。默认为 location.href
+      owner: 'smithedwin201',
+      repo: 'https://smithedwin201.github.io',
+      oauth: {
+        client_id: '6f99b38be314ce4cc85c',
+        client_secret: '921bf547c0360c382153220ab132754865d2793d',
+      },
+    })
+    gitment.render('container')
+    </script>
   
 
   
