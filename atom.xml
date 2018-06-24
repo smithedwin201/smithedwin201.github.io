@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yangtianbo.top/"/>
-  <updated>2018-06-19T09:06:17.911Z</updated>
+  <updated>2018-06-24T09:34:27.820Z</updated>
   <id>https://yangtianbo.top/</id>
   
   <author>
@@ -15,6 +15,20 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test1</title>
+    <link href="https://yangtianbo.top/2018/06/24/test1/"/>
+    <id>https://yangtianbo.top/2018/06/24/test1/</id>
+    <published>2018-06-24T09:34:27.000Z</published>
+    <updated>2018-06-24T09:34:27.820Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>title</title>
@@ -43,9 +57,9 @@
     <link href="https://yangtianbo.top/2018/06/19/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%A0%91%20/"/>
     <id>https://yangtianbo.top/2018/06/19/离散数学树 /</id>
     <published>2018-06-19T09:05:50.000Z</published>
-    <updated>2018-06-24T09:01:39.345Z</updated>
+    <updated>2018-06-24T09:28:20.557Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="树"><a href="#树" class="headerlink" title="树"></a>树</h2><hr><ol><li>平凡树：就是平凡图</li><li>森林：连通分支都是树的无向图</li><li>树的判定（m为边数，n为节点数）<ol><li>连通而不含回路</li><li>连通或不含回路，且m=n-1</li><li>无回路，但任意两节点之间加一条新边，有唯一的一条基本回路</li><li>连通，但删除任意边后，就不连通（n&gt;=2）</li><li>每队节点之间有唯一的一条基本通路</li></ol></li><li>任意非平凡树都至少有两片叶(可用握手定理,m=n-1和不等式证明)</li><li>生成树:图G的生成子图是树,则称之为图G的生成树<ol><li>树枝:生成树的边</li><li>弦:图G中不在生成树中的边</li><li>补:生成树所有弦的集合</li></ol></li><li>生成树的判定:充分必要条件是原图是连通的(下面的俩个方法没什么用)<ol><li>破圈法:删除回路中的边,直到剩下n-1条边</li><li>避圈法:选取不构成回路的边</li></ol></li><li>求生成树的广度优先算法<ol><li>先随便选一个节点,找与他相邻的节点做标记</li><li>最后保证每一个节点都有其前驱节点</li><li>不同的选择会有不同的生成树</li></ol></li><li>最小生成树<ol><li>最小生成树:对于连通赋权图,要使最后的生成树权和最小</li><li>kruskal算法:<ol><li>一共取n-1条边</li><li>每次取不构成回路的最小权边</li></ol></li><li>Prim算法:(每一步一定是树,不需要验证是否有回路)<ol><li>取一个节点</li><li>在剩下的节点中找与已取节点邻接的最小权边</li><li>直到取完所有节点</li></ol></li></ol></li><li>根树:非平凡有向树,且有一个节点入度为0,其他节点入度为1<ol><li>分支点:内点和根的统称</li><li>层数:从根到任意节点的通路长度</li></ol></li><li>k元完全树:<strong>每个分支点恰好有k个儿子</strong>(而不是有k个节点)<ol><li>若叶为t,分支数为i则:(k-1)*i=t-1<br> 证明: t+i-1=m=k(出度为边数)</li><li>二元完全树中:<ol><li>i=t-1</li><li>m=n-1=i+t-1=2t-2</li></ol></li></ol></li><li>根树变成二叉树:<ol><li>保留每个父亲和最左边儿子的连线,其他删掉</li><li>从左向右连线,即弟弟变右儿子</li><li>反过来就是右儿子变弟弟</li></ol></li><li>森林变二叉树:<ol><li>先把每个树变成二叉树(会导致所有二叉树的根没有右子树)</li><li>除第一个二叉树,把每个剩下的树作为作为左边树的右子树</li></ol></li><li>树的权:为每一层中叶的权值*叶所在的层数之和</li><li>最优树:树的权最小<ol><li>赫夫曼算法:可以解决最小前缀码和分硬币等问题<ol><li>建立集合存放权值(字母出现的概率等)</li><li>取出两个最小的权值,得到其父亲v</li><li>把v加入原集合重复操作,直到集合中只有一个元素</li></ol></li></ol></li><li>决策树:每个分支点都是一个问题<ol><li>5硬币问题:有一个硬币和其他重量不同用天平需要称几下,三下</li><li>推理从根到叶</li><li><img src="/images/120936576716809991.jpg" alt="五硬币"></li></ol></li><li>博弈树:7根火柴问题:甲乙依次取一根或两根火柴,但不能不取,取走最后一根的人胜利<ol><li>胜利的关键在于把3的倍数个火柴留给对方取</li><li>这样无论对方取一根还是两根你都可以再次把3的倍数的火柴给对方</li><li>当最后剩下3根时,对方只能去一根或者两根你就赢了</li><li>此树要从叶向根推理</li></ol></li><li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Baidu.svg/231px-Baidu.svg.png" alt="五硬币"></li><li>关键道路法,用于合理安排工期:规则是作业&lt;v5,v6&gt;表示的作业要在&lt;s,v3&gt;,&lt;v3,v5&gt;,&lt;s,v5&gt;三个作业完成之后才能开始,求出从s到t的最低限度时间,也叫关键道路(第一个生成树)<ol><li>为了不耽误整个工程的总体完成时间,并且对于非关键作业保证其机动性,有两个问题我们最为关心:<ol><li><h3 id="作业-lt-Vm-Vn-gt-最早什么时候能开始"><a href="#作业-lt-Vm-Vn-gt-最早什么时候能开始" class="headerlink" title="作业&lt;Vm,Vn&gt;最早什么时候能开始"></a>作业&lt;Vm,Vn&gt;最早什么时候能开始</h3><ol><li>计算从s到各点的最长道路.权值和就是作业最早开始时间</li></ol></li><li><h3 id="作业-lt-Vm-Vn-gt-最晚什么时候必须结束"><a href="#作业-lt-Vm-Vn-gt-最晚什么时候必须结束" class="headerlink" title="作业&lt;Vm,Vn&gt;最晚什么时候必须结束"></a>作业&lt;Vm,Vn&gt;最晚什么时候必须结束</h3><ol><li>计算从各节点到t的最长道路.项目整体完成时间-各节点权值和就是最晚结束时间</li></ol></li></ol></li><li>各作业的机动时间计算方法:设作业为&lt;Vn,Vm&gt;,节点Vm的最晚结束时间-节点Vn的最早开始时间(也就是作业的最早开始时间)加上作业所需的时间,这么算的原因是任务可能不在关键道路中,在关键道路中的节点可以直接用末节点的两个时间相减.</li><li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Baidu.svg/231px-Baidu.svg.png" alt="五硬币"></li></ol></li></ol>]]></content>
+    <content type="html"><![CDATA[<h2 id="树"><a href="#树" class="headerlink" title="树"></a>树</h2><hr><ol><li>平凡树：就是平凡图</li><li>森林：连通分支都是树的无向图</li><li>树的判定（m为边数，n为节点数）<ol><li>连通而不含回路</li><li>连通或不含回路，且m=n-1</li><li>无回路，但任意两节点之间加一条新边，有唯一的一条基本回路</li><li>连通，但删除任意边后，就不连通（n&gt;=2）</li><li>每队节点之间有唯一的一条基本通路</li></ol></li><li>任意非平凡树都至少有两片叶(可用握手定理,m=n-1和不等式证明)</li><li>生成树:图G的生成子图是树,则称之为图G的生成树<ol><li>树枝:生成树的边</li><li>弦:图G中不在生成树中的边</li><li>补:生成树所有弦的集合</li></ol></li><li>生成树的判定:充分必要条件是原图是连通的(下面的俩个方法没什么用)<ol><li>破圈法:删除回路中的边,直到剩下n-1条边</li><li>避圈法:选取不构成回路的边</li></ol></li><li>求生成树的广度优先算法<ol><li>先随便选一个节点,找与他相邻的节点做标记</li><li>最后保证每一个节点都有其前驱节点</li><li>不同的选择会有不同的生成树</li></ol></li><li>最小生成树<ol><li>最小生成树:对于连通赋权图,要使最后的生成树权和最小</li><li>kruskal算法:<ol><li>一共取n-1条边</li><li>每次取不构成回路的最小权边</li></ol></li><li>Prim算法:(每一步一定是树,不需要验证是否有回路)<ol><li>取一个节点</li><li>在剩下的节点中找与已取节点邻接的最小权边</li><li>直到取完所有节点</li></ol></li></ol></li><li>根树:非平凡有向树,且有一个节点入度为0,其他节点入度为1<ol><li>分支点:内点和根的统称</li><li>层数:从根到任意节点的通路长度</li></ol></li><li>k元完全树:<strong>每个分支点恰好有k个儿子</strong>(而不是有k个节点)<ol><li>若叶为t,分支数为i则:(k-1)*i=t-1<br> 证明: t+i-1=m=k(出度为边数)</li><li>二元完全树中:<ol><li>i=t-1</li><li>m=n-1=i+t-1=2t-2</li></ol></li></ol></li><li>根树变成二叉树:<ol><li>保留每个父亲和最左边儿子的连线,其他删掉</li><li>从左向右连线,即弟弟变右儿子</li><li>反过来就是右儿子变弟弟</li></ol></li><li>森林变二叉树:<ol><li>先把每个树变成二叉树(会导致所有二叉树的根没有右子树)</li><li>除第一个二叉树,把每个剩下的树作为作为左边树的右子树</li></ol></li><li>树的权:为每一层中叶的权值*叶所在的层数之和</li><li>最优树:树的权最小<ol><li>赫夫曼算法:可以解决最小前缀码和分硬币等问题<ol><li>建立集合存放权值(字母出现的概率等)</li><li>取出两个最小的权值,得到其父亲v</li><li>把v加入原集合重复操作,直到集合中只有一个元素</li></ol></li></ol></li><li>决策树:每个分支点都是一个问题<ol><li>5硬币问题:有一个硬币和其他重量不同用天平需要称几下,三下</li><li>推理从根到叶</li><li><img src="120936576716809991.jpg" alt="五硬币"></li></ol></li><li>博弈树:7根火柴问题:甲乙依次取一根或两根火柴,但不能不取,取走最后一根的人胜利<ol><li>胜利的关键在于把3的倍数个火柴留给对方取</li><li>这样无论对方取一根还是两根你都可以再次把3的倍数的火柴给对方</li><li>当最后剩下3根时,对方只能去一根或者两根你就赢了</li><li>此树要从叶向根推理</li></ol></li><li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Baidu.svg/231px-Baidu.svg.png" alt="五硬币"></li><li>关键道路法,用于合理安排工期:规则是作业&lt;v5,v6&gt;表示的作业要在&lt;s,v3&gt;,&lt;v3,v5&gt;,&lt;s,v5&gt;三个作业完成之后才能开始,求出从s到t的最低限度时间,也叫关键道路(第一个生成树)<ol><li>为了不耽误整个工程的总体完成时间,并且对于非关键作业保证其机动性,有两个问题我们最为关心:<ol><li><h3 id="作业-lt-Vm-Vn-gt-最早什么时候能开始"><a href="#作业-lt-Vm-Vn-gt-最早什么时候能开始" class="headerlink" title="作业&lt;Vm,Vn&gt;最早什么时候能开始"></a>作业&lt;Vm,Vn&gt;最早什么时候能开始</h3><ol><li>计算从s到各点的最长道路.权值和就是作业最早开始时间</li></ol></li><li><h3 id="作业-lt-Vm-Vn-gt-最晚什么时候必须结束"><a href="#作业-lt-Vm-Vn-gt-最晚什么时候必须结束" class="headerlink" title="作业&lt;Vm,Vn&gt;最晚什么时候必须结束"></a>作业&lt;Vm,Vn&gt;最晚什么时候必须结束</h3><ol><li>计算从各节点到t的最长道路.项目整体完成时间-各节点权值和就是最晚结束时间</li></ol></li></ol></li><li>各作业的机动时间计算方法:设作业为&lt;Vn,Vm&gt;,节点Vm的最晚结束时间-节点Vn的最早开始时间(也就是作业的最早开始时间)加上作业所需的时间,这么算的原因是任务可能不在关键道路中,在关键道路中的节点可以直接用末节点的两个时间相减.</li><li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Baidu.svg/231px-Baidu.svg.png" alt="五硬币"></li></ol></li></ol>]]></content>
     
     <summary type="html">
     
