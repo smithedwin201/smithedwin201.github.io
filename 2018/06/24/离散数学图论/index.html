@@ -81,18 +81,18 @@
 
 
 
-<meta name="description" content="《离散数学及其应用第二版》 图论     e1=&amp;lt;v1,v2&amp;gt;  有向  ，e1=(v1,v2) 无向   分类   无向图，有向图，混合图   多重图：含有平行边 线图：不含平行边 简单图：无环的线图  零图：只有孤立节点 平凡图：仅含一个节点的零图 n阶图：含有n个节点 赋权图和无权图     图的操作  删除：G-e 删除节点或边   收缩：设e为边，G\e 删除e ，将e的两个">
+<meta name="description" content="《离散数学及其应用第二版》 图论    e1=&amp;lt;v1,v2&amp;gt;  有向  ，e1=(v1,v2) 无向分类1. 无向图，有向图，混合图   2. 多重图：含有平行边 3. 线图：不含平行边 4. 简单图：无环的线图  5. 零图：只有孤立节点 6. 平凡图：仅含一个节点的零图 7. n阶图：含有n个节点 8. 赋权图和无权图   图的操作1. 删除：G-e 删除节点或边   2. 收缩：">
 <meta name="keywords" content="离散数学">
 <meta property="og:type" content="article">
 <meta property="og:title" content="离散数学图论">
 <meta property="og:url" content="https://yangtianbo.top/2018/06/24/离散数学图论/index.html">
 <meta property="og:site_name" content="Edwin_Smith">
-<meta property="og:description" content="《离散数学及其应用第二版》 图论     e1=&amp;lt;v1,v2&amp;gt;  有向  ，e1=(v1,v2) 无向   分类   无向图，有向图，混合图   多重图：含有平行边 线图：不含平行边 简单图：无环的线图  零图：只有孤立节点 平凡图：仅含一个节点的零图 n阶图：含有n个节点 赋权图和无权图     图的操作  删除：G-e 删除节点或边   收缩：设e为边，G\e 删除e ，将e的两个">
+<meta property="og:description" content="《离散数学及其应用第二版》 图论    e1=&amp;lt;v1,v2&amp;gt;  有向  ，e1=(v1,v2) 无向分类1. 无向图，有向图，混合图   2. 多重图：含有平行边 3. 线图：不含平行边 4. 简单图：无环的线图  5. 零图：只有孤立节点 6. 平凡图：仅含一个节点的零图 7. n阶图：含有n个节点 8. 赋权图和无权图   图的操作1. 删除：G-e 删除节点或边   2. 收缩：">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-24T13:04:30.870Z">
+<meta property="og:updated_time" content="2018-06-24T14:08:56.078Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="离散数学图论">
-<meta name="twitter:description" content="《离散数学及其应用第二版》 图论     e1=&amp;lt;v1,v2&amp;gt;  有向  ，e1=(v1,v2) 无向   分类   无向图，有向图，混合图   多重图：含有平行边 线图：不含平行边 简单图：无环的线图  零图：只有孤立节点 平凡图：仅含一个节点的零图 n阶图：含有n个节点 赋权图和无权图     图的操作  删除：G-e 删除节点或边   收缩：设e为边，G\e 删除e ，将e的两个">
+<meta name="twitter:description" content="《离散数学及其应用第二版》 图论    e1=&amp;lt;v1,v2&amp;gt;  有向  ，e1=(v1,v2) 无向分类1. 无向图，有向图，混合图   2. 多重图：含有平行边 3. 线图：不含平行边 4. 简单图：无环的线图  5. 零图：只有孤立节点 6. 平凡图：仅含一个节点的零图 7. n阶图：含有n个节点 8. 赋权图和无权图   图的操作1. 删除：G-e 删除节点或边   2. 收缩：">
 
 
 
@@ -371,87 +371,56 @@
 <li>图论 </li>
 </ul>
 <hr>
-<ol>
-<li>e1=&lt;v1,v2&gt;  有向  ，e1=(v1,v2) 无向  </li>
-<li>分类  <ol>
-<li>无向图，有向图，混合图  </li>
-<li>多重图：含有平行边</li>
-<li>线图：不含平行边</li>
-<li>简单图：无环的线图 </li>
-<li>零图：只有孤立节点</li>
-<li>平凡图：仅含一个节点的零图</li>
-<li>n阶图：含有n个节点</li>
-<li>赋权图和无权图  </li>
-</ol>
-</li>
-<li>图的操作 <ol>
-<li>删除：G-e 删除节点或边  </li>
-<li>收缩：设e为边，G\e 删除e ，将e的两个端点删除并用一个新的节点替代，并保留其他关联关系  </li>
-<li>加新边：G∪（u，v）在u,v之间加一新边  </li>
-</ol>
-</li>
-<li>子图  <ol>
-<li>生成子图：节点数不变，边数小于等于原图  </li>
-<li>导出子图： 删除部分节点，后得到的子图  </li>
-</ol>
-</li>
-<li>度和握手定理  <ol>
-<li>握手定理：图中节点度数的和为边数的两倍（出度入度各一次，出度和=入度和=边数）  </li>
-<li>图中度数为奇数的节点个数为偶数个（总度数为偶数，偶度数节点和为偶数，奇度数节点和也要是偶数）  </li>
-</ol>
-</li>
-<li>通路回路和连接性  <ol>
-<li>简单通路：通路中的所有边不相同（欧拉图有关）  </li>
-<li>基本通路：通路中的所有节点互不相同（哈密顿图有关）</li>
-<li>通路矩阵（我为了好记随便起的名):本质上是m次邻接矩阵,因为有通路就有a<sub>ik</sub>=1,<br>a<sub>kj</sub>=1,即a<sub>ik</sub>a<sub>kj</sub>=1   <ol>
-<li>a<sub>ij</sub><sup>m</sup>表示从节点v<sub>i</sub>到节点u<sub>j</sub>长度为m的通路数目  </li>
-<li>整个矩阵各元素求和为图G中长度为m的通路（包括回路）的总数目   </li>
-<li>a<sub>ii</sub><sup>m</sup>为节点v<sub>i</sub>到自身的长度为m的回路数目   </li>
-</ol>
-</li>
-<li>在一个具有n个节点的图中，如果有通路，则最少存在一条长度不大于n-1的基本通路(无环长度为n-1,<br>有环删环),若是说基本回路则是长度为n  </li>
-<li>可达性矩阵：将邻接矩阵做布尔积运算得到A<sup>1</sup>~A<sup>n</sup>再取并集得到      </li>
-</ol>
-</li>
-<li>无向图连通<ol>
-<li>连通图：无向图中的任何两个节点都是可达的  </li>
-<li>删除点后连通分支数变多——点割集，删除边后连通分支变多——边割集或割集  </li>
-<li>桥：若割集中只有一条边  </li>
-<li>点割集中最少的点数k叫做点连通度，也叫连通度，k-连通图，边叫k-边  </li>
-<li>完全图K<sub>n</sub>的点连通度为 n-1(n&gt;=1),非连通图的点连通度为0  </li>
-<li>点连通度&lt;=边连通度&lt;=节点的最小的度</li>
-</ol>
-</li>
-<li>有向图连通  <ol>
-<li>弱连通：有向转无向后连通</li>
-<li>单向连通： 任何一对节点中，有一个能到另一个  </li>
-<li>强连通： 任何一对节点中，互相能到 </li>
-</ol>
-</li>
-<li>有向图连通性质  <ol>
-<li>强连通图判定：图中存在一条经过所有节点的回路</li>
-<li>单向连通图判定：图中存在一条经过所有节点的通路  </li>
-<li>证明常用方法：极大基本通路法（找最大的基本通路）  </li>
-</ol>
-</li>
-<li>连通分支  <ol>
-<li>每一个节点位于且仅位于一个强（弱）连通分支中  </li>
-<li>每一个节点至少位于一个单向连通分支中  </li>
-<li>也就是说对于一个节点强联通一次，弱连通一次，单向连通若干次  </li>
-</ol>
-</li>
-<li>无向赋权图 <strong><em>最短通路算法</em></strong>  <ol>
-<li>dijkstra算法<br>走一步看一步,求之前路径的权重和</li>
-<li>floy算法  <ol>
-<li>构建长度矩阵（值为赋权图的邻值）  </li>
-<li>d<sub>ij</sub><sup>k</sup>=min{d<sub>ij</sub><sup>k-1</sup>,<br>d<sub>ik</sub><sup>k-1</sup>+d<sub>kj</sub><sup>k-1</sup>}<br>表示从节点v<sub>i</sub>到v<sub>j</sub>而中间节点仅属于v<sub>1</sub>到v<sub>k</sub><br>的所有通路中最短通路长度(三角方式找最小权)</li>
-<li>构建出D<sup>n</sup>，就是最短通路长度矩阵</li>
-</ol>
-</li>
-</ol>
-</li>
-</ol>
-
+<h2 id="e1-lt-v1-v2-gt-有向-，e1-v1-v2-无向"><a href="#e1-lt-v1-v2-gt-有向-，e1-v1-v2-无向" class="headerlink" title="e1=&lt;v1,v2&gt;  有向  ，e1=(v1,v2) 无向"></a>e1=&lt;v1,v2&gt;  有向  ，e1=(v1,v2) 无向</h2><h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><pre><code>1. 无向图，有向图，混合图  
+2. 多重图：含有平行边
+3. 线图：不含平行边
+4. 简单图：无环的线图 
+5. 零图：只有孤立节点
+6. 平凡图：仅含一个节点的零图
+7. n阶图：含有n个节点
+8. 赋权图和无权图  
+</code></pre><h2 id="图的操作"><a href="#图的操作" class="headerlink" title="图的操作"></a>图的操作</h2><pre><code>1. 删除：G-e 删除节点或边  
+2. 收缩：设e为边，G\e 删除e ，将e的两个端点删除并用一个新的节点替代，并保留其他关联关系  
+3. 加新边：G∪（u，v）在u,v之间加一新边  
+</code></pre><h2 id="子图"><a href="#子图" class="headerlink" title="子图"></a>子图</h2><pre><code>1. 生成子图：节点数不变，边数小于等于原图  
+2. 导出子图： 删除部分节点，后得到的子图  
+</code></pre><h2 id="度和握手定理"><a href="#度和握手定理" class="headerlink" title="度和握手定理"></a>度和握手定理</h2><pre><code>1. 握手定理：图中节点度数的和为边数的两倍（出度入度各一次，出度和=入度和=边数）  
+2. 图中度数为奇数的节点个数为偶数个（总度数为偶数，偶度数节点和为偶数，奇度数节点和也要是偶数）  
+</code></pre><h2 id="通路回路和连接性"><a href="#通路回路和连接性" class="headerlink" title="通路回路和连接性"></a>通路回路和连接性</h2><pre><code>1. 简单通路：通路中的所有边不相同（欧拉图有关）  
+2. 基本通路：通路中的所有节点互不相同（哈密顿图有关）
+3. 通路矩阵（我为了好记随便起的名):本质上是m次邻接矩阵,因为有通路就有a&lt;sub&gt;ik&lt;/sub&gt;=1,
+a&lt;sub&gt;kj&lt;/sub&gt;=1,即a&lt;sub&gt;ik&lt;/sub&gt;a&lt;sub&gt;kj&lt;/sub&gt;=1   
+    1. a&lt;sub&gt;ij&lt;/sub&gt;&lt;sup&gt;m&lt;/sup&gt;表示从节点v&lt;sub&gt;i&lt;/sub&gt;到节点u&lt;sub&gt;j&lt;/sub&gt;长度为m的通路数目  
+    2. 整个矩阵各元素求和为图G中长度为m的通路（包括回路）的总数目   
+    3. a&lt;sub&gt;ii&lt;/sub&gt;&lt;sup&gt;m&lt;/sup&gt;为节点v&lt;sub&gt;i&lt;/sub&gt;到自身的长度为m的回路数目   
+4. 在一个具有n个节点的图中，如果有通路，则最少存在一条长度不大于n-1的基本通路(无环长度为n-1,
+有环删环),若是说基本回路则是长度为n  
+5. 可达性矩阵：将邻接矩阵做布尔积运算得到A&lt;sup&gt;1&lt;/sup&gt;~A&lt;sup&gt;n&lt;/sup&gt;再取并集得到      
+</code></pre><h2 id="无向图连通"><a href="#无向图连通" class="headerlink" title="无向图连通"></a>无向图连通</h2><pre><code>1. 连通图：无向图中的任何两个节点都是可达的  
+2. 删除点后连通分支数变多——点割集，删除边后连通分支变多——边割集或割集  
+3. 桥：若割集中只有一条边  
+4. 点割集中最少的点数k叫做点连通度，也叫连通度，k-连通图，边叫k-边  
+5. 完全图K&lt;sub&gt;n&lt;/sub&gt;的点连通度为 n-1(n&gt;=1),非连通图的点连通度为0  
+6. 点连通度&lt;=边连通度&lt;=节点的最小的度
+</code></pre><h2 id="有向图连通"><a href="#有向图连通" class="headerlink" title="有向图连通"></a>有向图连通</h2><pre><code>1. 弱连通：有向转无向后连通
+2. 单向连通： 任何一对节点中，有一个能到另一个  
+3. 强连通： 任何一对节点中，互相能到 
+</code></pre><h2 id="有向图连通性质"><a href="#有向图连通性质" class="headerlink" title="有向图连通性质"></a>有向图连通性质</h2><pre><code>1. 强连通图判定：图中存在一条经过所有节点的回路
+2. 单向连通图判定：图中存在一条经过所有节点的通路  
+3. 证明常用方法：极大基本通路法（找最大的基本通路）  
+</code></pre><h2 id="连通分支"><a href="#连通分支" class="headerlink" title="连通分支"></a>连通分支</h2><pre><code>1. 每一个节点位于且仅位于一个强（弱）连通分支中  
+2. 每一个节点至少位于一个单向连通分支中  
+3. 也就是说对于一个节点强联通一次，弱连通一次，单向连通若干次  
+</code></pre><h2 id="无向赋权图-最短通路算法"><a href="#无向赋权图-最短通路算法" class="headerlink" title="无向赋权图 最短通路算法"></a>无向赋权图 <strong><em>最短通路算法</em></strong></h2><pre><code>1. dijkstra算法  
+走一步看一步,求之前路径的权重和
+2. floy算法  
+    1. 构建长度矩阵（值为赋权图的邻值）  
+    2. d&lt;sub&gt;ij&lt;/sub&gt;&lt;sup&gt;k&lt;/sup&gt;=min{d&lt;sub&gt;ij&lt;/sub&gt;&lt;sup&gt;k-1&lt;/sup&gt;,
+    d&lt;sub&gt;ik&lt;/sub&gt;&lt;sup&gt;k-1&lt;/sup&gt;+d&lt;sub&gt;kj&lt;/sub&gt;&lt;sup&gt;k-1&lt;/sup&gt;}
+    表示从节点v&lt;sub&gt;i&lt;/sub&gt;到v&lt;sub&gt;j&lt;/sub&gt;而中间节点仅属于v&lt;sub&gt;1&lt;/sub&gt;到v&lt;sub&gt;k&lt;/sub&gt;
+    的所有通路中最短通路长度(三角方式找最小权)
+    3. 构建出D&lt;sup&gt;n&lt;/sup&gt;，就是最短通路长度矩阵
+</code></pre>
       
     </div>
     
@@ -491,8 +460,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/06/24/特殊图/" rel="prev" title="离散数学特殊图">
-                离散数学特殊图 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/06/24/离散数学其他/" rel="prev" title="离散数学其他">
+                离散数学其他 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -626,7 +595,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#《离散数学及其应用第二版》"><span class="nav-number">1.</span> <span class="nav-text">《离散数学及其应用第二版》</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#《离散数学及其应用第二版》"><span class="nav-number">1.</span> <span class="nav-text">《离散数学及其应用第二版》</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#e1-lt-v1-v2-gt-有向-，e1-v1-v2-无向"><span class="nav-number">2.</span> <span class="nav-text">e1=&lt;v1,v2&gt;  有向  ，e1=(v1,v2) 无向</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#分类"><span class="nav-number">3.</span> <span class="nav-text">分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图的操作"><span class="nav-number">4.</span> <span class="nav-text">图的操作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#子图"><span class="nav-number">5.</span> <span class="nav-text">子图</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#度和握手定理"><span class="nav-number">6.</span> <span class="nav-text">度和握手定理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#通路回路和连接性"><span class="nav-number">7.</span> <span class="nav-text">通路回路和连接性</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#无向图连通"><span class="nav-number">8.</span> <span class="nav-text">无向图连通</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#有向图连通"><span class="nav-number">9.</span> <span class="nav-text">有向图连通</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#有向图连通性质"><span class="nav-number">10.</span> <span class="nav-text">有向图连通性质</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#连通分支"><span class="nav-number">11.</span> <span class="nav-text">连通分支</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#无向赋权图-最短通路算法"><span class="nav-number">12.</span> <span class="nav-text">无向赋权图 最短通路算法</span></a></li></ol></div>
             
 
           </div>
