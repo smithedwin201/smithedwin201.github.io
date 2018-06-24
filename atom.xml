@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>Edwin_Smith</title>
   
-  <subtitle>这世上只有一种成功，就是能够用自己喜欢的方式度过自己的一生</subtitle>
+  <subtitle>这世上只有一种成功，&lt;br&gt; 就是能够用自己喜欢的方式度过自己的一生</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://smithedwin201.github.io/"/>
