@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yangtianbo.top/"/>
-  <updated>2018-06-24T12:01:29.527Z</updated>
+  <updated>2018-06-24T12:15:23.723Z</updated>
   <id>https://yangtianbo.top/</id>
   
   <author>
@@ -21,15 +21,15 @@
     <link href="https://yangtianbo.top/2018/06/24/test1/"/>
     <id>https://yangtianbo.top/2018/06/24/test1/</id>
     <published>2018-06-24T09:34:27.000Z</published>
-    <updated>2018-06-24T12:01:29.527Z</updated>
+    <updated>2018-06-24T12:15:23.723Z</updated>
     
-    <content type="html"><![CDATA[<p><img src="120936576716809991.jpg" alt="dd"></p>]]></content>
+    <content type="html"><![CDATA[<img src="/2018/06/24/test1/120936576716809991.jpg" title="This is an example image">]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;&lt;img src=&quot;120936576716809991.jpg&quot; alt=&quot;dd&quot;&gt;&lt;/p&gt;
+        &lt;img src=&quot;/2018/06/24/test1/120936576716809991.jpg&quot; title=&quot;This is an example image&quot;&gt;
 
       
     
