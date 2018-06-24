@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yangtianbo.top/"/>
-  <updated>2018-06-24T14:08:01.471Z</updated>
+  <updated>2018-06-24T13:05:14.070Z</updated>
   <id>https://yangtianbo.top/</id>
   
   <author>
@@ -15,29 +15,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>离散数学其他</title>
-    <link href="https://yangtianbo.top/2018/06/24/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%85%B6%E4%BB%96/"/>
-    <id>https://yangtianbo.top/2018/06/24/离散数学其他/</id>
-    <published>2018-06-24T12:59:54.000Z</published>
-    <updated>2018-06-24T14:08:01.471Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="挑一些除了图和树之外的我认为比较重要的东西总结下"><a href="#挑一些除了图和树之外的我认为比较重要的东西总结下" class="headerlink" title="挑一些除了图和树之外的我认为比较重要的东西总结下"></a>挑一些除了图和树之外的我认为比较重要的东西总结下</h1><h2 id="二元关系"><a href="#二元关系" class="headerlink" title="二元关系"></a>二元关系</h2><pre><code>1. 等价： 自反，对称，传递2. 拟序关系：反自反，反对称，传递  （大于小于）3. 偏序关系： 自反，反对称，传递   （大于等于小于等于）4. 全序关系：偏序关系中每一个元素都能比大小，也叫线序关系  5. 良序关系：偏序集中非空子集有最小元  6. 有限全序集一定是良序集  </code></pre><h2 id="代数系统"><a href="#代数系统" class="headerlink" title="代数系统"></a>代数系统</h2><pre><code>1. 幺元：a*e=e*a=a  -------乘了相当于没乘2. 零元：a*e=e*a=e  -------像零一样把被乘数乘没了    3. 逆元：a*b=b*a=e  -------e为幺元，逆元为自身4. 同态：f(a*b)=f(a).f(b)  则f为同态映射5. 同构：当同态映射为双射时成为同构映射</code></pre><h2 id="群"><a href="#群" class="headerlink" title="群"></a>群</h2><pre><code>1. 半群： 二元运算满足结合律2. 群： 可逆含幺半群    1. 封闭性    2. 结合律    3. 存在幺元    4. 每个元的逆元存在</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;挑一些除了图和树之外的我认为比较重要的东西总结下&quot;&gt;&lt;a href=&quot;#挑一些除了图和树之外的我认为比较重要的东西总结下&quot; class=&quot;headerlink&quot; title=&quot;挑一些除了图和树之外的我认为比较重要的东西总结下&quot;&gt;&lt;/a&gt;挑一些除了图和树之外的我认为
-      
-    
-    </summary>
-    
-    
-      <category term="离散数学" scheme="https://yangtianbo.top/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/"/>
-    
-  </entry>
   
   <entry>
     <title>git用法</title>
@@ -63,23 +40,19 @@
   </entry>
   
   <entry>
-    <title>离散数学图论</title>
-    <link href="https://yangtianbo.top/2018/06/24/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%9B%BE%E8%AE%BA/"/>
-    <id>https://yangtianbo.top/2018/06/24/离散数学图论/</id>
+    <title>离散数学其他</title>
+    <link href="https://yangtianbo.top/2018/06/24/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%85%B6%E4%BB%96/"/>
+    <id>https://yangtianbo.top/2018/06/24/离散数学其他/</id>
     <published>2018-06-24T12:59:54.000Z</published>
-    <updated>2018-06-24T14:08:56.078Z</updated>
+    <updated>2018-06-24T14:08:01.471Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="《离散数学及其应用第二版》"><a href="#《离散数学及其应用第二版》" class="headerlink" title="《离散数学及其应用第二版》"></a>《离散数学及其应用第二版》</h2><ul><li>图论 </li></ul><hr><h2 id="e1-lt-v1-v2-gt-有向-，e1-v1-v2-无向"><a href="#e1-lt-v1-v2-gt-有向-，e1-v1-v2-无向" class="headerlink" title="e1=&lt;v1,v2&gt;  有向  ，e1=(v1,v2) 无向"></a>e1=&lt;v1,v2&gt;  有向  ，e1=(v1,v2) 无向</h2><h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><pre><code>1. 无向图，有向图，混合图  2. 多重图：含有平行边3. 线图：不含平行边4. 简单图：无环的线图 5. 零图：只有孤立节点6. 平凡图：仅含一个节点的零图7. n阶图：含有n个节点8. 赋权图和无权图  </code></pre><h2 id="图的操作"><a href="#图的操作" class="headerlink" title="图的操作"></a>图的操作</h2><pre><code>1. 删除：G-e 删除节点或边  2. 收缩：设e为边，G\e 删除e ，将e的两个端点删除并用一个新的节点替代，并保留其他关联关系  3. 加新边：G∪（u，v）在u,v之间加一新边  </code></pre><h2 id="子图"><a href="#子图" class="headerlink" title="子图"></a>子图</h2><pre><code>1. 生成子图：节点数不变，边数小于等于原图  2. 导出子图： 删除部分节点，后得到的子图  </code></pre><h2 id="度和握手定理"><a href="#度和握手定理" class="headerlink" title="度和握手定理"></a>度和握手定理</h2><pre><code>1. 握手定理：图中节点度数的和为边数的两倍（出度入度各一次，出度和=入度和=边数）  2. 图中度数为奇数的节点个数为偶数个（总度数为偶数，偶度数节点和为偶数，奇度数节点和也要是偶数）  </code></pre><h2 id="通路回路和连接性"><a href="#通路回路和连接性" class="headerlink" title="通路回路和连接性"></a>通路回路和连接性</h2><pre><code>1. 简单通路：通路中的所有边不相同（欧拉图有关）  2. 基本通路：通路中的所有节点互不相同（哈密顿图有关）3. 通路矩阵（我为了好记随便起的名):本质上是m次邻接矩阵,因为有通路就有a&lt;sub&gt;ik&lt;/sub&gt;=1,a&lt;sub&gt;kj&lt;/sub&gt;=1,即a&lt;sub&gt;ik&lt;/sub&gt;a&lt;sub&gt;kj&lt;/sub&gt;=1       1. a&lt;sub&gt;ij&lt;/sub&gt;&lt;sup&gt;m&lt;/sup&gt;表示从节点v&lt;sub&gt;i&lt;/sub&gt;到节点u&lt;sub&gt;j&lt;/sub&gt;长度为m的通路数目      2. 整个矩阵各元素求和为图G中长度为m的通路（包括回路）的总数目       3. a&lt;sub&gt;ii&lt;/sub&gt;&lt;sup&gt;m&lt;/sup&gt;为节点v&lt;sub&gt;i&lt;/sub&gt;到自身的长度为m的回路数目   4. 在一个具有n个节点的图中，如果有通路，则最少存在一条长度不大于n-1的基本通路(无环长度为n-1,有环删环),若是说基本回路则是长度为n  5. 可达性矩阵：将邻接矩阵做布尔积运算得到A&lt;sup&gt;1&lt;/sup&gt;~A&lt;sup&gt;n&lt;/sup&gt;再取并集得到      </code></pre><h2 id="无向图连通"><a href="#无向图连通" class="headerlink" title="无向图连通"></a>无向图连通</h2><pre><code>1. 连通图：无向图中的任何两个节点都是可达的  2. 删除点后连通分支数变多——点割集，删除边后连通分支变多——边割集或割集  3. 桥：若割集中只有一条边  4. 点割集中最少的点数k叫做点连通度，也叫连通度，k-连通图，边叫k-边  5. 完全图K&lt;sub&gt;n&lt;/sub&gt;的点连通度为 n-1(n&gt;=1),非连通图的点连通度为0  6. 点连通度&lt;=边连通度&lt;=节点的最小的度</code></pre><h2 id="有向图连通"><a href="#有向图连通" class="headerlink" title="有向图连通"></a>有向图连通</h2><pre><code>1. 弱连通：有向转无向后连通2. 单向连通： 任何一对节点中，有一个能到另一个  3. 强连通： 任何一对节点中，互相能到 </code></pre><h2 id="有向图连通性质"><a href="#有向图连通性质" class="headerlink" title="有向图连通性质"></a>有向图连通性质</h2><pre><code>1. 强连通图判定：图中存在一条经过所有节点的回路2. 单向连通图判定：图中存在一条经过所有节点的通路  3. 证明常用方法：极大基本通路法（找最大的基本通路）  </code></pre><h2 id="连通分支"><a href="#连通分支" class="headerlink" title="连通分支"></a>连通分支</h2><pre><code>1. 每一个节点位于且仅位于一个强（弱）连通分支中  2. 每一个节点至少位于一个单向连通分支中  3. 也就是说对于一个节点强联通一次，弱连通一次，单向连通若干次  </code></pre><h2 id="无向赋权图-最短通路算法"><a href="#无向赋权图-最短通路算法" class="headerlink" title="无向赋权图 最短通路算法"></a>无向赋权图 <strong><em>最短通路算法</em></strong></h2><pre><code>1. dijkstra算法  走一步看一步,求之前路径的权重和2. floy算法      1. 构建长度矩阵（值为赋权图的邻值）      2. d&lt;sub&gt;ij&lt;/sub&gt;&lt;sup&gt;k&lt;/sup&gt;=min{d&lt;sub&gt;ij&lt;/sub&gt;&lt;sup&gt;k-1&lt;/sup&gt;,    d&lt;sub&gt;ik&lt;/sub&gt;&lt;sup&gt;k-1&lt;/sup&gt;+d&lt;sub&gt;kj&lt;/sub&gt;&lt;sup&gt;k-1&lt;/sup&gt;}    表示从节点v&lt;sub&gt;i&lt;/sub&gt;到v&lt;sub&gt;j&lt;/sub&gt;而中间节点仅属于v&lt;sub&gt;1&lt;/sub&gt;到v&lt;sub&gt;k&lt;/sub&gt;    的所有通路中最短通路长度(三角方式找最小权)    3. 构建出D&lt;sup&gt;n&lt;/sup&gt;，就是最短通路长度矩阵</code></pre>]]></content>
+    <content type="html"><![CDATA[<h1 id="挑一些除了图和树之外的我认为比较重要的东西总结下"><a href="#挑一些除了图和树之外的我认为比较重要的东西总结下" class="headerlink" title="挑一些除了图和树之外的我认为比较重要的东西总结下"></a>挑一些除了图和树之外的我认为比较重要的东西总结下</h1><h2 id="二元关系"><a href="#二元关系" class="headerlink" title="二元关系"></a>二元关系</h2><pre><code>1. 等价： 自反，对称，传递2. 拟序关系：反自反，反对称，传递  （大于小于）3. 偏序关系： 自反，反对称，传递   （大于等于小于等于）4. 全序关系：偏序关系中每一个元素都能比大小，也叫线序关系  5. 良序关系：偏序集中非空子集有最小元  6. 有限全序集一定是良序集  </code></pre><h2 id="代数系统"><a href="#代数系统" class="headerlink" title="代数系统"></a>代数系统</h2><pre><code>1. 幺元：a*e=e*a=a  -------乘了相当于没乘2. 零元：a*e=e*a=e  -------像零一样把被乘数乘没了    3. 逆元：a*b=b*a=e  -------e为幺元，逆元为自身4. 同态：f(a*b)=f(a).f(b)  则f为同态映射5. 同构：当同态映射为双射时成为同构映射</code></pre><h2 id="群"><a href="#群" class="headerlink" title="群"></a>群</h2><pre><code>1. 半群： 二元运算满足结合律2. 群： 可逆含幺半群    1. 封闭性    2. 结合律    3. 存在幺元    4. 每个元的逆元存在</code></pre>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h2 id=&quot;《离散数学及其应用第二版》&quot;&gt;&lt;a href=&quot;#《离散数学及其应用第二版》&quot; class=&quot;headerlink&quot; title=&quot;《离散数学及其应用第二版》&quot;&gt;&lt;/a&gt;《离散数学及其应用第二版》&lt;/h2&gt;&lt;ul&gt;
-&lt;li&gt;图论 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;hr&gt;
-
+        &lt;h1 id=&quot;挑一些除了图和树之外的我认为比较重要的东西总结下&quot;&gt;&lt;a href=&quot;#挑一些除了图和树之外的我认为比较重要的东西总结下&quot; class=&quot;headerlink&quot; title=&quot;挑一些除了图和树之外的我认为比较重要的东西总结下&quot;&gt;&lt;/a&gt;挑一些除了图和树之外的我认为
       
     
     </summary>
@@ -104,6 +77,33 @@
       
         &lt;h2 id=&quot;树&quot;&gt;&lt;a href=&quot;#树&quot; class=&quot;headerlink&quot; title=&quot;树&quot;&gt;&lt;/a&gt;树&lt;/h2&gt;&lt;hr&gt;
 &lt;h2 id=&quot;平凡树：就是平凡图&quot;&gt;&lt;a href=&quot;#平凡树：就是平凡图&quot; class=&quot;headerlink&quot; title=&quot;平凡树：就是
+      
+    
+    </summary>
+    
+    
+      <category term="离散数学" scheme="https://yangtianbo.top/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>离散数学图论</title>
+    <link href="https://yangtianbo.top/2018/06/24/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%9B%BE%E8%AE%BA/"/>
+    <id>https://yangtianbo.top/2018/06/24/离散数学图论/</id>
+    <published>2018-06-24T12:59:54.000Z</published>
+    <updated>2018-06-24T14:08:56.078Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="《离散数学及其应用第二版》"><a href="#《离散数学及其应用第二版》" class="headerlink" title="《离散数学及其应用第二版》"></a>《离散数学及其应用第二版》</h2><ul><li>图论 </li></ul><hr><h2 id="e1-lt-v1-v2-gt-有向-，e1-v1-v2-无向"><a href="#e1-lt-v1-v2-gt-有向-，e1-v1-v2-无向" class="headerlink" title="e1=&lt;v1,v2&gt;  有向  ，e1=(v1,v2) 无向"></a>e1=&lt;v1,v2&gt;  有向  ，e1=(v1,v2) 无向</h2><h2 id="分类"><a href="#分类" class="headerlink" title="分类"></a>分类</h2><pre><code>1. 无向图，有向图，混合图  2. 多重图：含有平行边3. 线图：不含平行边4. 简单图：无环的线图 5. 零图：只有孤立节点6. 平凡图：仅含一个节点的零图7. n阶图：含有n个节点8. 赋权图和无权图  </code></pre><h2 id="图的操作"><a href="#图的操作" class="headerlink" title="图的操作"></a>图的操作</h2><pre><code>1. 删除：G-e 删除节点或边  2. 收缩：设e为边，G\e 删除e ，将e的两个端点删除并用一个新的节点替代，并保留其他关联关系  3. 加新边：G∪（u，v）在u,v之间加一新边  </code></pre><h2 id="子图"><a href="#子图" class="headerlink" title="子图"></a>子图</h2><pre><code>1. 生成子图：节点数不变，边数小于等于原图  2. 导出子图： 删除部分节点，后得到的子图  </code></pre><h2 id="度和握手定理"><a href="#度和握手定理" class="headerlink" title="度和握手定理"></a>度和握手定理</h2><pre><code>1. 握手定理：图中节点度数的和为边数的两倍（出度入度各一次，出度和=入度和=边数）  2. 图中度数为奇数的节点个数为偶数个（总度数为偶数，偶度数节点和为偶数，奇度数节点和也要是偶数）  </code></pre><h2 id="通路回路和连接性"><a href="#通路回路和连接性" class="headerlink" title="通路回路和连接性"></a>通路回路和连接性</h2><pre><code>1. 简单通路：通路中的所有边不相同（欧拉图有关）  2. 基本通路：通路中的所有节点互不相同（哈密顿图有关）3. 通路矩阵（我为了好记随便起的名):本质上是m次邻接矩阵,因为有通路就有a&lt;sub&gt;ik&lt;/sub&gt;=1,a&lt;sub&gt;kj&lt;/sub&gt;=1,即a&lt;sub&gt;ik&lt;/sub&gt;a&lt;sub&gt;kj&lt;/sub&gt;=1       1. a&lt;sub&gt;ij&lt;/sub&gt;&lt;sup&gt;m&lt;/sup&gt;表示从节点v&lt;sub&gt;i&lt;/sub&gt;到节点u&lt;sub&gt;j&lt;/sub&gt;长度为m的通路数目      2. 整个矩阵各元素求和为图G中长度为m的通路（包括回路）的总数目       3. a&lt;sub&gt;ii&lt;/sub&gt;&lt;sup&gt;m&lt;/sup&gt;为节点v&lt;sub&gt;i&lt;/sub&gt;到自身的长度为m的回路数目   4. 在一个具有n个节点的图中，如果有通路，则最少存在一条长度不大于n-1的基本通路(无环长度为n-1,有环删环),若是说基本回路则是长度为n  5. 可达性矩阵：将邻接矩阵做布尔积运算得到A&lt;sup&gt;1&lt;/sup&gt;~A&lt;sup&gt;n&lt;/sup&gt;再取并集得到      </code></pre><h2 id="无向图连通"><a href="#无向图连通" class="headerlink" title="无向图连通"></a>无向图连通</h2><pre><code>1. 连通图：无向图中的任何两个节点都是可达的  2. 删除点后连通分支数变多——点割集，删除边后连通分支变多——边割集或割集  3. 桥：若割集中只有一条边  4. 点割集中最少的点数k叫做点连通度，也叫连通度，k-连通图，边叫k-边  5. 完全图K&lt;sub&gt;n&lt;/sub&gt;的点连通度为 n-1(n&gt;=1),非连通图的点连通度为0  6. 点连通度&lt;=边连通度&lt;=节点的最小的度</code></pre><h2 id="有向图连通"><a href="#有向图连通" class="headerlink" title="有向图连通"></a>有向图连通</h2><pre><code>1. 弱连通：有向转无向后连通2. 单向连通： 任何一对节点中，有一个能到另一个  3. 强连通： 任何一对节点中，互相能到 </code></pre><h2 id="有向图连通性质"><a href="#有向图连通性质" class="headerlink" title="有向图连通性质"></a>有向图连通性质</h2><pre><code>1. 强连通图判定：图中存在一条经过所有节点的回路2. 单向连通图判定：图中存在一条经过所有节点的通路  3. 证明常用方法：极大基本通路法（找最大的基本通路）  </code></pre><h2 id="连通分支"><a href="#连通分支" class="headerlink" title="连通分支"></a>连通分支</h2><pre><code>1. 每一个节点位于且仅位于一个强（弱）连通分支中  2. 每一个节点至少位于一个单向连通分支中  3. 也就是说对于一个节点强联通一次，弱连通一次，单向连通若干次  </code></pre><h2 id="无向赋权图-最短通路算法"><a href="#无向赋权图-最短通路算法" class="headerlink" title="无向赋权图 最短通路算法"></a>无向赋权图 <strong><em>最短通路算法</em></strong></h2><pre><code>1. dijkstra算法  走一步看一步,求之前路径的权重和2. floy算法      1. 构建长度矩阵（值为赋权图的邻值）      2. d&lt;sub&gt;ij&lt;/sub&gt;&lt;sup&gt;k&lt;/sup&gt;=min{d&lt;sub&gt;ij&lt;/sub&gt;&lt;sup&gt;k-1&lt;/sup&gt;,    d&lt;sub&gt;ik&lt;/sub&gt;&lt;sup&gt;k-1&lt;/sup&gt;+d&lt;sub&gt;kj&lt;/sub&gt;&lt;sup&gt;k-1&lt;/sup&gt;}    表示从节点v&lt;sub&gt;i&lt;/sub&gt;到v&lt;sub&gt;j&lt;/sub&gt;而中间节点仅属于v&lt;sub&gt;1&lt;/sub&gt;到v&lt;sub&gt;k&lt;/sub&gt;    的所有通路中最短通路长度(三角方式找最小权)    3. 构建出D&lt;sup&gt;n&lt;/sup&gt;，就是最短通路长度矩阵</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;《离散数学及其应用第二版》&quot;&gt;&lt;a href=&quot;#《离散数学及其应用第二版》&quot; class=&quot;headerlink&quot; title=&quot;《离散数学及其应用第二版》&quot;&gt;&lt;/a&gt;《离散数学及其应用第二版》&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;图论 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+
       
     
     </summary>
