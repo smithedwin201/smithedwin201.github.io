@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yangtianbo.top/"/>
-  <updated>2018-06-24T12:15:23.723Z</updated>
+  <updated>2018-06-24T13:05:14.070Z</updated>
   <id>https://yangtianbo.top/</id>
   
   <author>
@@ -17,57 +17,139 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>test1</title>
-    <link href="https://yangtianbo.top/2018/06/24/test1/"/>
-    <id>https://yangtianbo.top/2018/06/24/test1/</id>
-    <published>2018-06-24T09:34:27.000Z</published>
-    <updated>2018-06-24T12:15:23.723Z</updated>
+    <title>git用法</title>
+    <link href="https://yangtianbo.top/2018/06/24/git%E7%94%A8%E6%B3%95/"/>
+    <id>https://yangtianbo.top/2018/06/24/git用法/</id>
+    <published>2018-06-24T12:59:54.000Z</published>
+    <updated>2018-06-24T13:05:14.070Z</updated>
     
-    <content type="html"><![CDATA[<img src="/2018/06/24/test1/120936576716809991.jpg" title="This is an example image">]]></content>
+    <content type="html"><![CDATA[<h2 id="写在一个地方好记些，不然时间一长习惯于依赖自动化工具就把命令什么的给忘了"><a href="#写在一个地方好记些，不然时间一长习惯于依赖自动化工具就把命令什么的给忘了" class="headerlink" title=" 写在一个地方好记些，不然时间一长习惯于依赖自动化工具就把命令什么的给忘了  "></a> 写在一个地方好记些，不然时间一长习惯于依赖自动化工具就把命令什么的给忘了  </h2><h3 id="1-注册，去掉引号就是查询当前状态"><a href="#1-注册，去掉引号就是查询当前状态" class="headerlink" title="1.注册，去掉引号就是查询当前状态"></a>1.注册，去掉引号就是查询当前状态</h3><p>git config –global user.name “tony”<br>git config –global user.email “<a href="mailto:tony@gmail.com" target="_blank" rel="noopener">tony@gmail.com</a>“</p><h3 id="2-基本命令"><a href="#2-基本命令" class="headerlink" title="2.基本命令"></a>2.基本命令</h3><p>git init<br>git add .<br>git reset .      取消添加<br>git commit -m “first”  </p><p>git status<br>git diff <dirname>              可以看到具体修改<br>git checkout <dirname>          回滚没有添加的修改  </dirname></dirname></p><p>git log<br>git log <commitid> -1 -p          查看一条记录的(-1)详细信息(-p)</commitid></p><h3 id="3-用-gitignore文件建立忽略"><a href="#3-用-gitignore文件建立忽略" class="headerlink" title="3.用.gitignore文件建立忽略"></a>3.用.gitignore文件建立忽略</h3><h3 id="4-分支和远程仓库"><a href="#4-分支和远程仓库" class="headerlink" title="4.分支和远程仓库"></a>4.分支和远程仓库</h3><p>git branch v1 创建分支v1<br>git checkout v1 切换分支到v1<br>git merge v1 将v1分支和当前分支合并<br>git branch -D v1 删除v1  </p><p>设https 为远程地址  </p><p>git clone https<br>git push https master 同步到远程仓库master 分支<br>git fetch https master 远程master 拉到本地隐藏分支（用git branch -a查看）<br>git diff &lt;隐藏分支名&gt; 查看远程和本地的不同<br>git pull https master  下载远程并合并到本地</p>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;img src=&quot;/2018/06/24/test1/120936576716809991.jpg&quot; title=&quot;This is an example image&quot;&gt;
+        &lt;h2 id=&quot;写在一个地方好记些，不然时间一长习惯于依赖自动化工具就把命令什么的给忘了&quot;&gt;&lt;a href=&quot;#写在一个地方好记些，不然时间一长习惯于依赖自动化工具就把命令什么的给忘了&quot; class=&quot;headerlink&quot; title=&quot; 写在一个地方好记些，不然时间一长习惯于
+      
+    
+    </summary>
+    
+    
+      <category term="git" scheme="https://yangtianbo.top/tags/git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>离散数学其他</title>
+    <link href="https://yangtianbo.top/2018/06/24/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%85%B6%E4%BB%96/"/>
+    <id>https://yangtianbo.top/2018/06/24/离散数学其他/</id>
+    <published>2018-06-24T12:59:54.000Z</published>
+    <updated>2018-06-24T13:04:35.223Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="挑一些除了图和树之外的我认为比较重要的东西总结下"><a href="#挑一些除了图和树之外的我认为比较重要的东西总结下" class="headerlink" title="挑一些除了图和树之外的我认为比较重要的东西总结下"></a>挑一些除了图和树之外的我认为比较重要的东西总结下</h2><hr><ol><li>二元关系  <ol><li>等价： 自反，对称，传递</li><li>拟序关系：反自反，反对称，传递  （大于小于）</li><li>偏序关系： 自反，反对称，传递   （大于等于小于等于）</li><li>全序关系：偏序关系中每一个元素都能比大小，也叫线序关系  </li><li>良序关系：偏序集中非空子集有最小元  </li><li>有限全序集一定是良序集  </li></ol></li><li>代数系统  <ol><li>幺元：a<em>e=e</em>a=a  ——-乘了相当于没乘</li><li>零元：a<em>e=e</em>a=e  ——-像零一样把被乘数乘没了    </li><li>逆元：a<em>b=b</em>a=e  ——-e为幺元，逆元为自身</li><li>同态：f(a*b)=f(a).f(b)  则f为同态映射</li><li>同构：当同态映射为双射时成为同构映射</li></ol></li><li>群<ol><li>半群： 二元运算满足结合律</li><li>群： 可逆含幺半群<ol><li>封闭性</li><li>结合律</li><li>存在幺元</li><li>每个元的逆元存在</li></ol></li></ol></li><li>偏序格</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;挑一些除了图和树之外的我认为比较重要的东西总结下&quot;&gt;&lt;a href=&quot;#挑一些除了图和树之外的我认为比较重要的东西总结下&quot; class=&quot;headerlink&quot; title=&quot;挑一些除了图和树之外的我认为比较重要的东西总结下&quot;&gt;&lt;/a&gt;挑一些除了图和树之外的我认为
+      
+    
+    </summary>
+    
+    
+      <category term="离散数学" scheme="https://yangtianbo.top/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>离散数学特殊图</title>
+    <link href="https://yangtianbo.top/2018/06/24/%E7%89%B9%E6%AE%8A%E5%9B%BE/"/>
+    <id>https://yangtianbo.top/2018/06/24/特殊图/</id>
+    <published>2018-06-24T12:59:54.000Z</published>
+    <updated>2018-06-24T13:04:25.448Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="特殊图"><a href="#特殊图" class="headerlink" title="特殊图"></a>特殊图</h2><hr><ol><li>欧拉图:边不重复——连通且有零个或两个奇度数点<ol><li>中国邮政问题:要走完全部边,使权和最小(欧拉图就是欧拉回路,不是就要加平行边)<ol><li>可行方案:消除奇度数节点</li><li>最佳方案:<ol><li>每条边的重数要小于等于2</li><li>每个基本回路上平行边的总权值不大于回路权值的一半</li></ol></li></ol></li></ol></li><li>哈密顿图:节点不重复<ol><li>巡回售货员问题:<strong><em>遍历所有节点</em></strong>,使得边权和最小<ol><li>最邻近算法(没啥用):找最小的下一步走法</li><li>抄近路算法:<ol><li>求最小生成树</li><li>将各边加一条与原边权值相同的平行边,所得图为欧拉图</li><li>在欧拉回路中选一个节点,按照欧拉回路的顺序访问节点,但是一旦出现重复的节点,就跳过他走到下一个节点,结果记为W(H)</li></ol></li><li>如果原图满足三角不等式,d0为最小哈密顿回路的长度,则W(H)&lt;2d0</li><li>证明:设T为最小生成树,E为每条边加过平行边后的欧拉回路,H为抄近路算法求出的哈密顿回路.由三角不等式有  W(H)&lt;=W(E)=2W(T) , 最短哈密顿回路去掉任意边后就产生了一棵生成树T’,就有W(T)&lt;=W(T’)&lt;d0,就有W(H)&lt;2d0.</li></ol></li></ol></li><li>偶图:把节点分成两个节点集,任意边的两个端点在两个节点集中<ol><li>完全偶图:两个节点集中的每个节点都有且只有一条边相关联</li><li>判定:充分必要条件是所有回路的长度均为偶数</li><li>完全匹配也叫匹配:存在V1到V2的单射</li></ol></li><li>平面图<ol><li>边不交叉</li><li>欧拉公式:n个节点,m条边,r个面有 n-m+r=2</li><li>判定(斯拉托夫斯基定理):图是非平面图的充要条件是它存在一个能收缩为K5或者K3,3的子图</li><li>K5,K3,3<img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Baidu.svg/231px-Baidu.svg.png" alt="五硬币"></li><li></li></ol></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;特殊图&quot;&gt;&lt;a href=&quot;#特殊图&quot; class=&quot;headerlink&quot; title=&quot;特殊图&quot;&gt;&lt;/a&gt;特殊图&lt;/h2&gt;&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;欧拉图:边不重复——连通且有零个或两个奇度数点&lt;ol&gt;
+&lt;li&gt;中国邮政问题:要走完全部边,使权和最小(欧拉图
+      
+    
+    </summary>
+    
+    
+      <category term="离散数学" scheme="https://yangtianbo.top/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>离散数学图论</title>
+    <link href="https://yangtianbo.top/2018/06/24/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%9B%BE%E8%AE%BA/"/>
+    <id>https://yangtianbo.top/2018/06/24/离散数学图论/</id>
+    <published>2018-06-24T12:59:54.000Z</published>
+    <updated>2018-06-24T13:04:30.870Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="《离散数学及其应用第二版》"><a href="#《离散数学及其应用第二版》" class="headerlink" title="《离散数学及其应用第二版》"></a>《离散数学及其应用第二版》</h2><ul><li>图论 </li></ul><hr><ol><li>e1=&lt;v1,v2&gt;  有向  ，e1=(v1,v2) 无向  </li><li>分类  <ol><li>无向图，有向图，混合图  </li><li>多重图：含有平行边</li><li>线图：不含平行边</li><li>简单图：无环的线图 </li><li>零图：只有孤立节点</li><li>平凡图：仅含一个节点的零图</li><li>n阶图：含有n个节点</li><li>赋权图和无权图  </li></ol></li><li>图的操作 <ol><li>删除：G-e 删除节点或边  </li><li>收缩：设e为边，G\e 删除e ，将e的两个端点删除并用一个新的节点替代，并保留其他关联关系  </li><li>加新边：G∪（u，v）在u,v之间加一新边  </li></ol></li><li>子图  <ol><li>生成子图：节点数不变，边数小于等于原图  </li><li>导出子图： 删除部分节点，后得到的子图  </li></ol></li><li>度和握手定理  <ol><li>握手定理：图中节点度数的和为边数的两倍（出度入度各一次，出度和=入度和=边数）  </li><li>图中度数为奇数的节点个数为偶数个（总度数为偶数，偶度数节点和为偶数，奇度数节点和也要是偶数）  </li></ol></li><li>通路回路和连接性  <ol><li>简单通路：通路中的所有边不相同（欧拉图有关）  </li><li>基本通路：通路中的所有节点互不相同（哈密顿图有关）</li><li>通路矩阵（我为了好记随便起的名):本质上是m次邻接矩阵,因为有通路就有a<sub>ik</sub>=1,<br>a<sub>kj</sub>=1,即a<sub>ik</sub>a<sub>kj</sub>=1   <ol><li>a<sub>ij</sub><sup>m</sup>表示从节点v<sub>i</sub>到节点u<sub>j</sub>长度为m的通路数目  </li><li>整个矩阵各元素求和为图G中长度为m的通路（包括回路）的总数目   </li><li>a<sub>ii</sub><sup>m</sup>为节点v<sub>i</sub>到自身的长度为m的回路数目   </li></ol></li><li>在一个具有n个节点的图中，如果有通路，则最少存在一条长度不大于n-1的基本通路(无环长度为n-1,<br>有环删环),若是说基本回路则是长度为n  </li><li>可达性矩阵：将邻接矩阵做布尔积运算得到A<sup>1</sup>~A<sup>n</sup>再取并集得到      </li></ol></li><li>无向图连通<ol><li>连通图：无向图中的任何两个节点都是可达的  </li><li>删除点后连通分支数变多——点割集，删除边后连通分支变多——边割集或割集  </li><li>桥：若割集中只有一条边  </li><li>点割集中最少的点数k叫做点连通度，也叫连通度，k-连通图，边叫k-边  </li><li>完全图K<sub>n</sub>的点连通度为 n-1(n&gt;=1),非连通图的点连通度为0  </li><li>点连通度&lt;=边连通度&lt;=节点的最小的度</li></ol></li><li>有向图连通  <ol><li>弱连通：有向转无向后连通</li><li>单向连通： 任何一对节点中，有一个能到另一个  </li><li>强连通： 任何一对节点中，互相能到 </li></ol></li><li>有向图连通性质  <ol><li>强连通图判定：图中存在一条经过所有节点的回路</li><li>单向连通图判定：图中存在一条经过所有节点的通路  </li><li>证明常用方法：极大基本通路法（找最大的基本通路）  </li></ol></li><li>连通分支  <ol><li>每一个节点位于且仅位于一个强（弱）连通分支中  </li><li>每一个节点至少位于一个单向连通分支中  </li><li>也就是说对于一个节点强联通一次，弱连通一次，单向连通若干次  </li></ol></li><li>无向赋权图 <strong><em>最短通路算法</em></strong>  <ol><li>dijkstra算法<br>走一步看一步,求之前路径的权重和</li><li>floy算法  <ol><li>构建长度矩阵（值为赋权图的邻值）  </li><li>d<sub>ij</sub><sup>k</sup>=min{d<sub>ij</sub><sup>k-1</sup>,<br>d<sub>ik</sub><sup>k-1</sup>+d<sub>kj</sub><sup>k-1</sup>}<br>表示从节点v<sub>i</sub>到v<sub>j</sub>而中间节点仅属于v<sub>1</sub>到v<sub>k</sub><br>的所有通路中最短通路长度(三角方式找最小权)</li><li>构建出D<sup>n</sup>，就是最短通路长度矩阵</li></ol></li></ol></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;《离散数学及其应用第二版》&quot;&gt;&lt;a href=&quot;#《离散数学及其应用第二版》&quot; class=&quot;headerlink&quot; title=&quot;《离散数学及其应用第二版》&quot;&gt;&lt;/a&gt;《离散数学及其应用第二版》&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;图论 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
 
       
     
     </summary>
     
     
+      <category term="离散数学" scheme="https://yangtianbo.top/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/"/>
+    
   </entry>
   
   <entry>
-    <title>title</title>
-    <link href="https://yangtianbo.top/2018/06/19/title/"/>
-    <id>https://yangtianbo.top/2018/06/19/title/</id>
-    <published>2018-06-19T09:05:50.000Z</published>
-    <updated>2018-06-19T09:06:17.911Z</updated>
+    <title>英语作文笔记</title>
+    <link href="https://yangtianbo.top/2018/06/24/%E8%8B%B1%E8%AF%AD%E4%BD%9C%E6%96%87%E7%B4%A0%E6%9D%90/"/>
+    <id>https://yangtianbo.top/2018/06/24/英语作文素材/</id>
+    <published>2018-06-24T12:59:54.000Z</published>
+    <updated>2018-06-24T13:04:07.977Z</updated>
     
-    <content type="html"><![CDATA[<p>vncxg</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="英语作文笔记"><a href="#英语作文笔记" class="headerlink" title="英语作文笔记"></a>英语作文笔记</h2><hr><ol><li>常用替换<ol><li>before=prior to</li><li>important=vitally matter=essential=  </li><li>A host of=a lot of</li><li>It’s indisputable that …=There is no doubt that …</li></ol></li><li>常用短语<ol><li>be armed with</li><li>enrich our knowledge reserves</li></ol></li><li>常用句型<ol><li>Just as the remark goes,” … “</li><li></li></ol></li><li>开头句式<ol><li>With the rapid development of society, …</li><li>When pinched between A or B, many people find themselves in a dilemma.</li></ol></li><li>过渡连接<ol><li>On the one hand, from the standpoint of an nation, …..<br>On the other hand, from the perspective of individuals, …  </li><li>First and foremost,…</li></ol></li><li>结尾句式 <ol><li>All we need is our utmost effort to do something …</li><li>As mentioned above, …</li></ol></li></ol>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;p&gt;vncxg&lt;/p&gt;
-
+        &lt;h2 id=&quot;英语作文笔记&quot;&gt;&lt;a href=&quot;#英语作文笔记&quot; class=&quot;headerlink&quot; title=&quot;英语作文笔记&quot;&gt;&lt;/a&gt;英语作文笔记&lt;/h2&gt;&lt;hr&gt;
+&lt;ol&gt;
+&lt;li&gt;常用替换&lt;ol&gt;
+&lt;li&gt;before=prior to&lt;/li&gt;
+&lt;li&gt;impor
       
     
     </summary>
     
     
+      <category term="英语" scheme="https://yangtianbo.top/tags/%E8%8B%B1%E8%AF%AD/"/>
+    
   </entry>
   
   <entry>
-    <title>titleq</title>
-    <link href="https://yangtianbo.top/2018/06/19/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%A0%91%20/"/>
-    <id>https://yangtianbo.top/2018/06/19/离散数学树 /</id>
-    <published>2018-06-19T09:05:50.000Z</published>
-    <updated>2018-06-24T09:28:20.557Z</updated>
+    <title>离散数学树</title>
+    <link href="https://yangtianbo.top/2018/06/24/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%A0%91%20/"/>
+    <id>https://yangtianbo.top/2018/06/24/离散数学树 /</id>
+    <published>2018-06-24T12:59:54.000Z</published>
+    <updated>2018-06-24T13:33:59.914Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="树"><a href="#树" class="headerlink" title="树"></a>树</h2><hr><ol><li>平凡树：就是平凡图</li><li>森林：连通分支都是树的无向图</li><li>树的判定（m为边数，n为节点数）<ol><li>连通而不含回路</li><li>连通或不含回路，且m=n-1</li><li>无回路，但任意两节点之间加一条新边，有唯一的一条基本回路</li><li>连通，但删除任意边后，就不连通（n&gt;=2）</li><li>每队节点之间有唯一的一条基本通路</li></ol></li><li>任意非平凡树都至少有两片叶(可用握手定理,m=n-1和不等式证明)</li><li>生成树:图G的生成子图是树,则称之为图G的生成树<ol><li>树枝:生成树的边</li><li>弦:图G中不在生成树中的边</li><li>补:生成树所有弦的集合</li></ol></li><li>生成树的判定:充分必要条件是原图是连通的(下面的俩个方法没什么用)<ol><li>破圈法:删除回路中的边,直到剩下n-1条边</li><li>避圈法:选取不构成回路的边</li></ol></li><li>求生成树的广度优先算法<ol><li>先随便选一个节点,找与他相邻的节点做标记</li><li>最后保证每一个节点都有其前驱节点</li><li>不同的选择会有不同的生成树</li></ol></li><li>最小生成树<ol><li>最小生成树:对于连通赋权图,要使最后的生成树权和最小</li><li>kruskal算法:<ol><li>一共取n-1条边</li><li>每次取不构成回路的最小权边</li></ol></li><li>Prim算法:(每一步一定是树,不需要验证是否有回路)<ol><li>取一个节点</li><li>在剩下的节点中找与已取节点邻接的最小权边</li><li>直到取完所有节点</li></ol></li></ol></li><li>根树:非平凡有向树,且有一个节点入度为0,其他节点入度为1<ol><li>分支点:内点和根的统称</li><li>层数:从根到任意节点的通路长度</li></ol></li><li>k元完全树:<strong>每个分支点恰好有k个儿子</strong>(而不是有k个节点)<ol><li>若叶为t,分支数为i则:(k-1)*i=t-1<br> 证明: t+i-1=m=k(出度为边数)</li><li>二元完全树中:<ol><li>i=t-1</li><li>m=n-1=i+t-1=2t-2</li></ol></li></ol></li><li>根树变成二叉树:<ol><li>保留每个父亲和最左边儿子的连线,其他删掉</li><li>从左向右连线,即弟弟变右儿子</li><li>反过来就是右儿子变弟弟</li></ol></li><li>森林变二叉树:<ol><li>先把每个树变成二叉树(会导致所有二叉树的根没有右子树)</li><li>除第一个二叉树,把每个剩下的树作为作为左边树的右子树</li></ol></li><li>树的权:为每一层中叶的权值*叶所在的层数之和</li><li>最优树:树的权最小<ol><li>赫夫曼算法:可以解决最小前缀码和分硬币等问题<ol><li>建立集合存放权值(字母出现的概率等)</li><li>取出两个最小的权值,得到其父亲v</li><li>把v加入原集合重复操作,直到集合中只有一个元素</li></ol></li></ol></li><li>决策树:每个分支点都是一个问题<ol><li>5硬币问题:有一个硬币和其他重量不同用天平需要称几下,三下</li><li>推理从根到叶</li><li><img src="120936576716809991.jpg" alt="五硬币"></li></ol></li><li>博弈树:7根火柴问题:甲乙依次取一根或两根火柴,但不能不取,取走最后一根的人胜利<ol><li>胜利的关键在于把3的倍数个火柴留给对方取</li><li>这样无论对方取一根还是两根你都可以再次把3的倍数的火柴给对方</li><li>当最后剩下3根时,对方只能去一根或者两根你就赢了</li><li>此树要从叶向根推理</li></ol></li><li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Baidu.svg/231px-Baidu.svg.png" alt="五硬币"></li><li>关键道路法,用于合理安排工期:规则是作业&lt;v5,v6&gt;表示的作业要在&lt;s,v3&gt;,&lt;v3,v5&gt;,&lt;s,v5&gt;三个作业完成之后才能开始,求出从s到t的最低限度时间,也叫关键道路(第一个生成树)<ol><li>为了不耽误整个工程的总体完成时间,并且对于非关键作业保证其机动性,有两个问题我们最为关心:<ol><li><h3 id="作业-lt-Vm-Vn-gt-最早什么时候能开始"><a href="#作业-lt-Vm-Vn-gt-最早什么时候能开始" class="headerlink" title="作业&lt;Vm,Vn&gt;最早什么时候能开始"></a>作业&lt;Vm,Vn&gt;最早什么时候能开始</h3><ol><li>计算从s到各点的最长道路.权值和就是作业最早开始时间</li></ol></li><li><h3 id="作业-lt-Vm-Vn-gt-最晚什么时候必须结束"><a href="#作业-lt-Vm-Vn-gt-最晚什么时候必须结束" class="headerlink" title="作业&lt;Vm,Vn&gt;最晚什么时候必须结束"></a>作业&lt;Vm,Vn&gt;最晚什么时候必须结束</h3><ol><li>计算从各节点到t的最长道路.项目整体完成时间-各节点权值和就是最晚结束时间</li></ol></li></ol></li><li>各作业的机动时间计算方法:设作业为&lt;Vn,Vm&gt;,节点Vm的最晚结束时间-节点Vn的最早开始时间(也就是作业的最早开始时间)加上作业所需的时间,这么算的原因是任务可能不在关键道路中,在关键道路中的节点可以直接用末节点的两个时间相减.</li><li><img src="https://upload.wikimedia.org/wikipedia/en/thumb/f/f4/Baidu.svg/231px-Baidu.svg.png" alt="五硬币"></li></ol></li></ol>]]></content>
+    <content type="html"><![CDATA[<h2 id="树"><a href="#树" class="headerlink" title="树"></a>树</h2><hr><ol><li>平凡树：就是平凡图</li><li>森林：连通分支都是树的无向图</li><li>树的判定（m为边数，n为节点数）<ol><li>连通而不含回路</li><li>连通或不含回路，且m=n-1</li><li>无回路，但任意两节点之间加一条新边，有唯一的一条基本回路</li><li>连通，但删除任意边后，就不连通（n&gt;=2）</li><li>每队节点之间有唯一的一条基本通路</li></ol></li><li>任意非平凡树都至少有两片叶(可用握手定理,m=n-1和不等式证明)</li><li>生成树:图G的生成子图是树,则称之为图G的生成树<ol><li>树枝:生成树的边</li><li>弦:图G中不在生成树中的边</li><li>补:生成树所有弦的集合</li></ol></li><li>生成树的判定:充分必要条件是原图是连通的(下面的俩个方法没什么用)<ol><li>破圈法:删除回路中的边,直到剩下n-1条边</li><li>避圈法:选取不构成回路的边</li></ol></li><li>求生成树的广度优先算法<ol><li>先随便选一个节点,找与他相邻的节点做标记</li><li>最后保证每一个节点都有其前驱节点</li><li>不同的选择会有不同的生成树</li></ol></li><li>最小生成树<ol><li>最小生成树:对于连通赋权图,要使最后的生成树权和最小</li><li>kruskal算法:<ol><li>一共取n-1条边</li><li>每次取不构成回路的最小权边</li></ol></li><li>Prim算法:(每一步一定是树,不需要验证是否有回路)<ol><li>取一个节点</li><li>在剩下的节点中找与已取节点邻接的最小权边</li><li>直到取完所有节点</li></ol></li></ol></li><li>根树:非平凡有向树,且有一个节点入度为0,其他节点入度为1<ol><li>分支点:内点和根的统称</li><li>层数:从根到任意节点的通路长度</li></ol></li><li>k元完全树:<strong>每个分支点恰好有k个儿子</strong>(而不是有k个节点)<ol><li>若叶为t,分支数为i则:(k-1)*i=t-1<br> 证明: t+i-1=m=k(出度为边数)</li><li>二元完全树中:<ol><li>i=t-1</li><li>m=n-1=i+t-1=2t-2</li></ol></li></ol></li><li>根树变成二叉树:<ol><li>保留每个父亲和最左边儿子的连线,其他删掉</li><li>从左向右连线,即弟弟变右儿子</li><li>反过来就是右儿子变弟弟</li></ol></li><li>森林变二叉树:<ol><li>先把每个树变成二叉树(会导致所有二叉树的根没有右子树)</li><li>除第一个二叉树,把每个剩下的树作为作为左边树的右子树</li></ol></li><li>树的权:为每一层中叶的权值*叶所在的层数之和</li><li>最优树:树的权最小<ol><li>赫夫曼算法:可以解决最小前缀码和分硬币等问题<ol><li>建立集合存放权值(字母出现的概率等)</li><li>取出两个最小的权值,得到其父亲v</li><li>把v加入原集合重复操作,直到集合中只有一个元素</li></ol></li></ol></li><li>决策树:每个分支点都是一个问题<ol><li>5硬币问题:有一个硬币和其他重量不同用天平需要称几下,三下</li><li>推理从根到叶</li><li><img src="/images/决策树-五硬币.jpg" alt="决策树-五硬币"></li></ol></li><li>博弈树:7根火柴问题:甲乙依次取一根或两根火柴,但不能不取,取走最后一根的人胜利<ol><li>胜利的关键在于把3的倍数个火柴留给对方取</li><li>这样无论对方取一根还是两根你都可以再次把3的倍数的火柴给对方</li><li>当最后剩下3根时,对方只能去一根或者两根你就赢了</li><li>此树要从叶向根推理</li></ol></li><li><img src="/images/博弈树.png" alt="博弈树"></li><li>关键道路法,用于合理安排工期:规则是作业&lt;v5,v6&gt;表示的作业要在&lt;s,v3&gt;,&lt;v3,v5&gt;,&lt;s,v5&gt;三个作业完成之后才能开始,求出从s到t的最低限度时间,也叫关键道路(第一个生成树)<br><img src="/images/关键道路法-最后结果.jpg" alt="关键道路法-最后结果"><ol><li>为了不耽误整个工程的总体完成时间,并且对于非关键作业保证其机动性,有两个问题我们最为关心:<ol><li><h3 id="作业-lt-Vm-Vn-gt-最早什么时候能开始"><a href="#作业-lt-Vm-Vn-gt-最早什么时候能开始" class="headerlink" title="作业&lt;Vm,Vn&gt;最早什么时候能开始"></a>作业&lt;Vm,Vn&gt;最早什么时候能开始</h3><ol><li>计算从s到各点的最长道路.权值和就是作业最早开始时间</li></ol></li></ol></li></ol></li></ol><p><img src="/images/关键道路最早.png" alt="关键道路最早"></p><pre><code>1. ### 作业&lt;Vm,Vn&gt;最晚什么时候必须结束    1. 计算从各节点到t的最长道路.项目整体完成时间-各节点权值和就是最晚结束时间</code></pre><p><img src="/images/关键道路最迟.png" alt="关键道路最迟"></p><pre><code>1. 各作业的机动时间计算方法:设作业为&lt;Vn,Vm&gt;,节点Vm的最晚结束时间-节点Vn的最早开始时间(也就是作业的最早开始时间)加上作业所需的时间,这么算的原因是任务可能不在关键道路中,在关键道路中的节点可以直接用末节点的两个时间相减</code></pre>]]></content>
     
     <summary type="html">
     
@@ -83,26 +165,7 @@
     </summary>
     
     
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="https://yangtianbo.top/2018/06/19/hello-world/"/>
-    <id>https://yangtianbo.top/2018/06/19/hello-world/</id>
-    <published>2018-06-19T07:38:10.689Z</published>
-    <updated>2018-06-19T09:35:50.769Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
+      <category term="离散数学" scheme="https://yangtianbo.top/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/"/>
     
   </entry>
   
