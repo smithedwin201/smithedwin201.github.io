@@ -38,19 +38,19 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[离散数学特殊图]]></title>
-    <url>%2F2018%2F06%2F24%2F%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%89%B9%E6%AE%8A%E5%9B%BE%2F</url>
-    <content type="text"><![CDATA[特殊图 欧拉图:边不重复——连通且有零个或两个奇度数点1. 中国邮政问题:要走完全部边,使权和最小(欧拉图就是欧拉回路,不是就要加平行边) 1. 可行方案:消除奇度数节点 2. 最佳方案: 1. 每条边的重数要小于等于2 2. 每个基本回路上平行边的总权值不大于回路权值的一半 哈密顿图:节点不重复1. 巡回售货员问题:***遍历所有节点***,使得边权和最小 1. 最邻近算法(没啥用):找最小的下一步走法 2. 抄近路算法: 1. 求最小生成树 2. 将各边加一条与原边权值相同的平行边,所得图为欧拉图 3. 在欧拉回路中选一个节点,按照欧拉回路的顺序访问节点,但是一旦出现重复的节点,就跳过他走到下一个节点,结果记为W(H) 3. 如果原图满足三角不等式,d0为最小哈密顿回路的长度,则W(H)&lt;2d0 4. 证明:设T为最小生成树,E为每条边加过平行边后的欧拉回路,H为抄近路算法求出的哈密顿回路.由三角不等式有 W(H)&lt;=W(E)=2W(T) , 最短哈密顿回路去掉任意边后就产生了一棵生成树T&apos;,就有W(T)&lt;=W(T&apos;)&lt;d0,就有W(H)&lt;2d0. 偶图:把节点分成两个节点集,任意边的两个端点在两个节点集中1. 完全偶图:两个节点集中的每个节点都有且只有一条边相关联 2. 判定:充分必要条件是所有回路的长度均为偶数 3. 完全匹配也叫匹配:存在V1到V2的单射 平面图1. 边不交叉 2. 欧拉公式:n个节点,m条边,r个面有 n-m+r=2 3. 判定(斯拉托夫斯基定理):图是非平面图的充要条件是它存在一个能收缩为K5或者K3,3的子图 4. K5,K3,3 ![K5,K3,3](https://upload.wikimedia.org/wikipedia/commons/4/40/K3%2C3_v%C3%A0_K5.png)]]></content>
-      <tags>
-        <tag>离散数学</tag>
-      </tags>
-  </entry>
-  <entry>
     <title><![CDATA[英语作文笔记]]></title>
     <url>%2F2018%2F06%2F24%2F%E8%8B%B1%E8%AF%AD%E4%BD%9C%E6%96%87%E7%B4%A0%E6%9D%90%2F</url>
     <content type="text"><![CDATA[英语作文笔记 常用替换1. before=prior to 2. important=vitally matter=essential= 3. A host of=a lot of 4. It&apos;s indisputable that ...=There is no doubt that ... 5. beautiful=imposing=spectacular 常用短语1. be armed with 2. enrich our knowledge reserves 常用句型1. Just as the remark goes,&quot; ... &quot; 2. 开头句式1. With the rapid development of society, ... 2. When pinched between A or B, many people find themselves in a dilemma. 过渡连接1. On the one hand, from the standpoint of an nation, ..... On the other hand, from the perspective of individuals, ... 2. First and foremost,... 结尾句式1. All we need is our utmost effort to do something ... 2. As mentioned above, ...]]></content>
       <tags>
         <tag>英语</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[离散数学特殊图]]></title>
+    <url>%2F2018%2F06%2F24%2F%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E7%89%B9%E6%AE%8A%E5%9B%BE%2F</url>
+    <content type="text"><![CDATA[特殊图 欧拉图:边不重复——连通且有零个或两个奇度数点1. 中国邮政问题:要走完全部边,使权和最小(欧拉图就是欧拉回路,不是就要加平行边) 1. 可行方案:消除奇度数节点 2. 最佳方案: 1. 每条边的重数要小于等于2 2. 每个基本回路上平行边的总权值不大于回路权值的一半 哈密顿图:节点不重复1. 巡回售货员问题:***遍历所有节点***,使得边权和最小 1. 最邻近算法(没啥用):找最小的下一步走法 2. 抄近路算法: 1. 求最小生成树 2. 将各边加一条与原边权值相同的平行边,所得图为欧拉图 3. 在欧拉回路中选一个节点,按照欧拉回路的顺序访问节点,但是一旦出现重复的节点,就跳过他走到下一个节点,结果记为W(H) 3. 如果原图满足三角不等式,d0为最小哈密顿回路的长度,则W(H)&lt;2d0 4. 证明:设T为最小生成树,E为每条边加过平行边后的欧拉回路,H为抄近路算法求出的哈密顿回路.由三角不等式有 W(H)&lt;=W(E)=2W(T) , 最短哈密顿回路去掉任意边后就产生了一棵生成树T&apos;,就有W(T)&lt;=W(T&apos;)&lt;d0,就有W(H)&lt;2d0. 偶图:把节点分成两个节点集,任意边的两个端点在两个节点集中1. 完全偶图:两个节点集中的每个节点都有且只有一条边相关联 2. 判定:充分必要条件是所有回路的长度均为偶数 3. 完全匹配也叫匹配:存在V1到V2的单射 平面图1. 边不交叉 2. 欧拉公式:n个节点,m条边,r个面有 n-m+r=2 3. 判定(斯拉托夫斯基定理):图是非平面图的充要条件是它存在一个能收缩为K5或者K3,3的子图 4. K5,K3,3 ![K5,K3,3](https://upload.wikimedia.org/wikipedia/commons/4/40/K3%2C3_v%C3%A0_K5.png)]]></content>
+      <tags>
+        <tag>离散数学</tag>
       </tags>
   </entry>
 </search>
