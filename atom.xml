@@ -62,29 +62,6 @@
   </entry>
   
   <entry>
-    <title>离散数学其他</title>
-    <link href="https://yangtianbo.top/2018/06/24/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%85%B6%E4%BB%96/"/>
-    <id>https://yangtianbo.top/2018/06/24/离散数学其他/</id>
-    <published>2018-06-24T12:59:54.000Z</published>
-    <updated>2018-06-24T14:08:01.471Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="挑一些除了图和树之外的我认为比较重要的东西总结下"><a href="#挑一些除了图和树之外的我认为比较重要的东西总结下" class="headerlink" title="挑一些除了图和树之外的我认为比较重要的东西总结下"></a>挑一些除了图和树之外的我认为比较重要的东西总结下</h1><h2 id="二元关系"><a href="#二元关系" class="headerlink" title="二元关系"></a>二元关系</h2><pre><code>1. 等价： 自反，对称，传递2. 拟序关系：反自反，反对称，传递  （大于小于）3. 偏序关系： 自反，反对称，传递   （大于等于小于等于）4. 全序关系：偏序关系中每一个元素都能比大小，也叫线序关系  5. 良序关系：偏序集中非空子集有最小元  6. 有限全序集一定是良序集  </code></pre><h2 id="代数系统"><a href="#代数系统" class="headerlink" title="代数系统"></a>代数系统</h2><pre><code>1. 幺元：a*e=e*a=a  -------乘了相当于没乘2. 零元：a*e=e*a=e  -------像零一样把被乘数乘没了    3. 逆元：a*b=b*a=e  -------e为幺元，逆元为自身4. 同态：f(a*b)=f(a).f(b)  则f为同态映射5. 同构：当同态映射为双射时成为同构映射</code></pre><h2 id="群"><a href="#群" class="headerlink" title="群"></a>群</h2><pre><code>1. 半群： 二元运算满足结合律2. 群： 可逆含幺半群    1. 封闭性    2. 结合律    3. 存在幺元    4. 每个元的逆元存在</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;挑一些除了图和树之外的我认为比较重要的东西总结下&quot;&gt;&lt;a href=&quot;#挑一些除了图和树之外的我认为比较重要的东西总结下&quot; class=&quot;headerlink&quot; title=&quot;挑一些除了图和树之外的我认为比较重要的东西总结下&quot;&gt;&lt;/a&gt;挑一些除了图和树之外的我认为
-      
-    
-    </summary>
-    
-    
-      <category term="离散数学" scheme="https://yangtianbo.top/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
     <title>离散数学图论</title>
     <link href="https://yangtianbo.top/2018/06/24/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%9B%BE%E8%AE%BA/"/>
     <id>https://yangtianbo.top/2018/06/24/离散数学图论/</id>
@@ -102,6 +79,29 @@
 &lt;/ul&gt;
 &lt;hr&gt;
 
+      
+    
+    </summary>
+    
+    
+      <category term="离散数学" scheme="https://yangtianbo.top/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>离散数学其他</title>
+    <link href="https://yangtianbo.top/2018/06/24/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%85%B6%E4%BB%96/"/>
+    <id>https://yangtianbo.top/2018/06/24/离散数学其他/</id>
+    <published>2018-06-24T12:59:54.000Z</published>
+    <updated>2018-06-24T14:08:01.471Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="挑一些除了图和树之外的我认为比较重要的东西总结下"><a href="#挑一些除了图和树之外的我认为比较重要的东西总结下" class="headerlink" title="挑一些除了图和树之外的我认为比较重要的东西总结下"></a>挑一些除了图和树之外的我认为比较重要的东西总结下</h1><h2 id="二元关系"><a href="#二元关系" class="headerlink" title="二元关系"></a>二元关系</h2><pre><code>1. 等价： 自反，对称，传递2. 拟序关系：反自反，反对称，传递  （大于小于）3. 偏序关系： 自反，反对称，传递   （大于等于小于等于）4. 全序关系：偏序关系中每一个元素都能比大小，也叫线序关系  5. 良序关系：偏序集中非空子集有最小元  6. 有限全序集一定是良序集  </code></pre><h2 id="代数系统"><a href="#代数系统" class="headerlink" title="代数系统"></a>代数系统</h2><pre><code>1. 幺元：a*e=e*a=a  -------乘了相当于没乘2. 零元：a*e=e*a=e  -------像零一样把被乘数乘没了    3. 逆元：a*b=b*a=e  -------e为幺元，逆元为自身4. 同态：f(a*b)=f(a).f(b)  则f为同态映射5. 同构：当同态映射为双射时成为同构映射</code></pre><h2 id="群"><a href="#群" class="headerlink" title="群"></a>群</h2><pre><code>1. 半群： 二元运算满足结合律2. 群： 可逆含幺半群    1. 封闭性    2. 结合律    3. 存在幺元    4. 每个元的逆元存在</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;挑一些除了图和树之外的我认为比较重要的东西总结下&quot;&gt;&lt;a href=&quot;#挑一些除了图和树之外的我认为比较重要的东西总结下&quot; class=&quot;headerlink&quot; title=&quot;挑一些除了图和树之外的我认为比较重要的东西总结下&quot;&gt;&lt;/a&gt;挑一些除了图和树之外的我认为
       
     
     </summary>

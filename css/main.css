@@ -498,8 +498,8 @@ code {
 code {
   padding: 2px 4px;
   word-wrap: break-word;
-  color: #555;
-  background: #eee;
+  color: rgba(0,0,0,0.7);
+  background: rgba(0,0,0,0.7);
   border-radius: 3px;
   font-size: 13px;
 }
@@ -1822,7 +1822,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #9dd7a3;
+  background: #1dffff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2659,6 +2659,34 @@ embed {
 }
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
+}
+.post-block {
+  padding: 40px;
+  background: rgba(0,0,0,0.7);
+  box-shadow: $box-shadow-inner;
+  border-radius: $border-radius-inner;
+}
+.comments {
+  padding: 40px;
+  margin: initial;
+  margin-top: sboffset;
+  background: rgba(0,0,0,0.7);
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+}
+.pagination {
+  margin: sboffset 0 0;
+  border-top: initial;
+  background: rgba(0,0,0,0.7);
+  box-shadow: $box-shadow;
+  border-radius: $border-radius;
+  padding: 10px 0 10px;
+}
+.pagination .prev,
+.pagination .next,
+.pagination .page-number {
+  margin-bottom: initial;
+  top: initial;
 }
 body {
   background-image: url("/images/background.jpg");
