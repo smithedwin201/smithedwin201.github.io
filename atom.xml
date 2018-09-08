@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://yangtianbo.top/"/>
-  <updated>2018-06-24T13:05:14.070Z</updated>
+  <updated>2018-08-18T14:35:39.251Z</updated>
   <id>https://yangtianbo.top/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>log4j:WARN No appenders could be found for logger 的解决方法</title>
+    <link href="https://yangtianbo.top/2018/08/18/log4jWARN%20No%20appenders%20could%20be%20found%20for%20logger%20%E7%9A%84%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95/"/>
+    <id>https://yangtianbo.top/2018/08/18/log4jWARN No appenders could be found for logger 的解决方法/</id>
+    <published>2018-08-18T14:34:55.000Z</published>
+    <updated>2018-08-18T14:35:39.251Z</updated>
+    
+    <content type="html"><![CDATA[<p>2013年07月16日 17:44:21<br>阅读数：18151<br>一、SSH在使用Log4j进行日志管理时常会遇到这个异常：</p><p>log4j:WARN No appenders could be found for logger (org.springframework.web.context.ContextLoader).<br>log4j:WARN Please initialize the log4j system properly.</p><p>网上也有很多解决方案，我在此总结了一下，出现这个问题时应该按以下思路来排查：</p><ol><li><p>确保log4j的配置文件log4j.properties或log4j.xml已经存在（在classpath路径或其他路径下都行，文件内容可参考后面的内容）</p></li><li><p>没有在web.xml中配置log4j的监听器，如果没有按以下方式配置：</p><!-- log4j配置文件地址 --><p><context-param><br><param-name>log4jConfigLocation</param-name><br><param-value>/WEB-INF/log4j/log4j.properties</param-value><br></context-param></p><!-- spring配置文件地址 --><p><context-param><br>   <param-name>contextConfigLocation</param-name><br>   <param-value>/WEB-INF/classes/applicationContext.xml</param-value><br></context-param></p><!-- Log4j的监听器要放在spring监听器前面 --><listener><br> <listener-class>org.springframework.web.util.Log4jConfigListener</listener-class><br></listener><br><!-- spring的监听器 --><br><listener><br>   <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class><br></listener></li></ol><p>注意：Log4j的监听器要放在spring监听器前面</p><ol start="3"><li>确保log4j.properties中没有明显的错误存在，如logger或appender配置有误</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;2013年07月16日 17:44:21&lt;br&gt;阅读数：18151&lt;br&gt;一、SSH在使用Log4j进行日志管理时常会遇到这个异常：&lt;/p&gt;
+&lt;p&gt;log4j:WARN No appenders could be found for logger (org.springfr
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>git用法</title>
@@ -63,30 +85,6 @@
   </entry>
   
   <entry>
-    <title>离散数学树</title>
-    <link href="https://yangtianbo.top/2018/06/24/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%A0%91%20/"/>
-    <id>https://yangtianbo.top/2018/06/24/离散数学树 /</id>
-    <published>2018-06-24T12:59:54.000Z</published>
-    <updated>2018-06-24T14:10:14.148Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="树"><a href="#树" class="headerlink" title="树"></a>树</h2><hr><h2 id="平凡树：就是平凡图"><a href="#平凡树：就是平凡图" class="headerlink" title="平凡树：就是平凡图"></a>平凡树：就是平凡图</h2><h2 id="森林：连通分支都是树的无向图"><a href="#森林：连通分支都是树的无向图" class="headerlink" title="森林：连通分支都是树的无向图"></a>森林：连通分支都是树的无向图</h2><h2 id="树的判定（m为边数，n为节点数）"><a href="#树的判定（m为边数，n为节点数）" class="headerlink" title="树的判定（m为边数，n为节点数）"></a>树的判定（m为边数，n为节点数）</h2><pre><code>1. 连通而不含回路2. 连通或不含回路，且m=n-13. 无回路，但任意两节点之间加一条新边，有唯一的一条基本回路4. 连通，但删除任意边后，就不连通（n&gt;=2）5. 每队节点之间有唯一的一条基本通路</code></pre><h2 id="任意非平凡树都至少有两片叶-可用握手定理-m-n-1和不等式证明"><a href="#任意非平凡树都至少有两片叶-可用握手定理-m-n-1和不等式证明" class="headerlink" title="任意非平凡树都至少有两片叶(可用握手定理,m=n-1和不等式证明)"></a>任意非平凡树都至少有两片叶(可用握手定理,m=n-1和不等式证明)</h2><h2 id="生成树-图G的生成子图是树-则称之为图G的生成树"><a href="#生成树-图G的生成子图是树-则称之为图G的生成树" class="headerlink" title="生成树:图G的生成子图是树,则称之为图G的生成树"></a>生成树:图G的生成子图是树,则称之为图G的生成树</h2><pre><code>1.  树枝:生成树的边2.  弦:图G中不在生成树中的边3.  补:生成树所有弦的集合</code></pre><h2 id="生成树的判定-充分必要条件是原图是连通的-下面的俩个方法没什么用"><a href="#生成树的判定-充分必要条件是原图是连通的-下面的俩个方法没什么用" class="headerlink" title="生成树的判定:充分必要条件是原图是连通的(下面的俩个方法没什么用)"></a>生成树的判定:充分必要条件是原图是连通的(下面的俩个方法没什么用)</h2><pre><code>1. 破圈法:删除回路中的边,直到剩下n-1条边2. 避圈法:选取不构成回路的边</code></pre><h2 id="求生成树的广度优先算法"><a href="#求生成树的广度优先算法" class="headerlink" title="求生成树的广度优先算法"></a>求生成树的广度优先算法</h2><pre><code>1. 先随便选一个节点,找与他相邻的节点做标记2. 最后保证每一个节点都有其前驱节点3. 不同的选择会有不同的生成树</code></pre><h2 id="最小生成树"><a href="#最小生成树" class="headerlink" title="最小生成树"></a>最小生成树</h2><pre><code>1. 最小生成树:对于连通赋权图,要使最后的生成树权和最小2. kruskal算法:    1. 一共取n-1条边    2. 每次取不构成回路的最小权边3. Prim算法:(每一步一定是树,不需要验证是否有回路)    1. 取一个节点    2. 在剩下的节点中找与已取节点邻接的最小权边    3. 直到取完所有节点</code></pre><h2 id="根树-非平凡有向树-且有一个节点入度为0-其他节点入度为1"><a href="#根树-非平凡有向树-且有一个节点入度为0-其他节点入度为1" class="headerlink" title="根树:非平凡有向树,且有一个节点入度为0,其他节点入度为1"></a>根树:非平凡有向树,且有一个节点入度为0,其他节点入度为1</h2><pre><code>1. 分支点:内点和根的统称2. 层数:从根到任意节点的通路长度</code></pre><h2 id="k元完全树-每个分支点恰好有k个儿子-而不是有k个节点"><a href="#k元完全树-每个分支点恰好有k个儿子-而不是有k个节点" class="headerlink" title="k元完全树:每个分支点恰好有k个儿子(而不是有k个节点)"></a>k元完全树:<strong>每个分支点恰好有k个儿子</strong>(而不是有k个节点)</h2><pre><code>1.  若叶为t,分支数为i则:(k-1)*i=t-1         证明: t+i-1=m=k(出度为边数)2. 二元完全树中:    1. i=t-1    2. m=n-1=i+t-1=2t-2</code></pre><h2 id="根树变成二叉树"><a href="#根树变成二叉树" class="headerlink" title="根树变成二叉树:"></a>根树变成二叉树:</h2><pre><code>1. 保留每个父亲和最左边儿子的连线,其他删掉2. 从左向右连线,即弟弟变右儿子3. 反过来就是右儿子变弟弟</code></pre><h2 id="森林变二叉树"><a href="#森林变二叉树" class="headerlink" title="森林变二叉树:"></a>森林变二叉树:</h2><pre><code>1. 先把每个树变成二叉树(会导致所有二叉树的根没有右子树)2. 除第一个二叉树,把每个剩下的树作为作为左边树的右子树</code></pre><h2 id="树的权-为每一层中叶的权值-叶所在的层数之和"><a href="#树的权-为每一层中叶的权值-叶所在的层数之和" class="headerlink" title="树的权:为每一层中叶的权值*叶所在的层数之和"></a>树的权:为每一层中叶的权值*叶所在的层数之和</h2><h2 id="最优树-树的权最小"><a href="#最优树-树的权最小" class="headerlink" title="最优树:树的权最小"></a>最优树:树的权最小</h2><pre><code>1. 赫夫曼算法:可以解决最小前缀码和分硬币等问题    1. 建立集合存放权值(字母出现的概率等)    2. 取出两个最小的权值,得到其父亲v    3. 把v加入原集合重复操作,直到集合中只有一个元素</code></pre><h2 id="决策树-每个分支点都是一个问题"><a href="#决策树-每个分支点都是一个问题" class="headerlink" title="决策树:每个分支点都是一个问题"></a>决策树:每个分支点都是一个问题</h2><pre><code>1. 5硬币问题:有一个硬币和其他重量不同用天平需要称几下,三下2. 推理从根到叶3. ![决策树-五硬币](/images/决策树-五硬币.jpg)</code></pre><h2 id="博弈树-7根火柴问题-甲乙依次取一根或两根火柴-但不能不取-取走最后一根的人胜利"><a href="#博弈树-7根火柴问题-甲乙依次取一根或两根火柴-但不能不取-取走最后一根的人胜利" class="headerlink" title="博弈树:7根火柴问题:甲乙依次取一根或两根火柴,但不能不取,取走最后一根的人胜利"></a>博弈树:7根火柴问题:甲乙依次取一根或两根火柴,但不能不取,取走最后一根的人胜利</h2><pre><code>1. 胜利的关键在于把3的倍数个火柴留给对方取2. 这样无论对方取一根还是两根你都可以再次把3的倍数的火柴给对方3. 当最后剩下3根时,对方只能去一根或者两根你就赢了4. 此树要从叶向根推理</code></pre><p>   <img src="/images/博弈树.png" alt="博弈树"></p><h2 id="关键道路法-用于合理安排工期-规则是作业-lt-v5-v6-gt-表示的作业要在-lt-s-v3-gt-lt-v3-v5-gt-lt-s-v5-gt-三个作业完成之后才能开始-求出从s到t的最低限度时间-也叫关键道路-第一个生成树"><a href="#关键道路法-用于合理安排工期-规则是作业-lt-v5-v6-gt-表示的作业要在-lt-s-v3-gt-lt-v3-v5-gt-lt-s-v5-gt-三个作业完成之后才能开始-求出从s到t的最低限度时间-也叫关键道路-第一个生成树" class="headerlink" title="关键道路法,用于合理安排工期:规则是作业&lt;v5,v6&gt;表示的作业要在&lt;s,v3&gt;,&lt;v3,v5&gt;,&lt;s,v5&gt;三个作业完成之后才能开始,求出从s到t的最低限度时间,也叫关键道路(第一个生成树)"></a>关键道路法,用于合理安排工期:规则是作业&lt;v5,v6&gt;表示的作业要在&lt;s,v3&gt;,&lt;v3,v5&gt;,&lt;s,v5&gt;三个作业完成之后才能开始,求出从s到t的最低限度时间,也叫关键道路(第一个生成树)</h2><p> <img src="/images/关键道路法-最后结果.jpg" alt="关键道路法-最后结果"></p><pre><code>1. 为了不耽误整个工程的总体完成时间,并且对于非关键作业保证其机动性,有两个问题我们最为关心:    1. ### 作业&lt;Vm,Vn&gt;最早什么时候能开始        1. 计算从s到各点的最长道路.权值和就是作业最早开始时间</code></pre><p><img src="/images/关键道路最早.png" alt="关键道路最早"></p><pre><code>1. ### 作业&lt;Vm,Vn&gt;最晚什么时候必须结束    1. 计算从各节点到t的最长道路.项目整体完成时间-各节点权值和就是最晚结束时间</code></pre><p><img src="/images/关键道路最迟.png" alt="关键道路最迟"></p><pre><code>1. 各作业的机动时间计算方法:设作业为&lt;Vn,Vm&gt;,节点Vm的最晚结束时间-节点Vn的最早开始时间(也就是作业的最早开始时间)加上作业所需的时间,这么算的原因是任务可能不在关键道路中,在关键道路中的节点可以直接用末节点的两个时间相减</code></pre>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h2 id=&quot;树&quot;&gt;&lt;a href=&quot;#树&quot; class=&quot;headerlink&quot; title=&quot;树&quot;&gt;&lt;/a&gt;树&lt;/h2&gt;&lt;hr&gt;
-&lt;h2 id=&quot;平凡树：就是平凡图&quot;&gt;&lt;a href=&quot;#平凡树：就是平凡图&quot; class=&quot;headerlink&quot; title=&quot;平凡树：就是
-      
-    
-    </summary>
-    
-    
-      <category term="离散数学" scheme="https://yangtianbo.top/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
     <title>离散数学图论</title>
     <link href="https://yangtianbo.top/2018/06/24/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E5%9B%BE%E8%AE%BA/"/>
     <id>https://yangtianbo.top/2018/06/24/离散数学图论/</id>
@@ -104,6 +102,30 @@
 &lt;/ul&gt;
 &lt;hr&gt;
 
+      
+    
+    </summary>
+    
+    
+      <category term="离散数学" scheme="https://yangtianbo.top/tags/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>离散数学树</title>
+    <link href="https://yangtianbo.top/2018/06/24/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%A0%91%20/"/>
+    <id>https://yangtianbo.top/2018/06/24/离散数学树 /</id>
+    <published>2018-06-24T12:59:54.000Z</published>
+    <updated>2018-06-24T14:10:14.148Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="树"><a href="#树" class="headerlink" title="树"></a>树</h2><hr><h2 id="平凡树：就是平凡图"><a href="#平凡树：就是平凡图" class="headerlink" title="平凡树：就是平凡图"></a>平凡树：就是平凡图</h2><h2 id="森林：连通分支都是树的无向图"><a href="#森林：连通分支都是树的无向图" class="headerlink" title="森林：连通分支都是树的无向图"></a>森林：连通分支都是树的无向图</h2><h2 id="树的判定（m为边数，n为节点数）"><a href="#树的判定（m为边数，n为节点数）" class="headerlink" title="树的判定（m为边数，n为节点数）"></a>树的判定（m为边数，n为节点数）</h2><pre><code>1. 连通而不含回路2. 连通或不含回路，且m=n-13. 无回路，但任意两节点之间加一条新边，有唯一的一条基本回路4. 连通，但删除任意边后，就不连通（n&gt;=2）5. 每队节点之间有唯一的一条基本通路</code></pre><h2 id="任意非平凡树都至少有两片叶-可用握手定理-m-n-1和不等式证明"><a href="#任意非平凡树都至少有两片叶-可用握手定理-m-n-1和不等式证明" class="headerlink" title="任意非平凡树都至少有两片叶(可用握手定理,m=n-1和不等式证明)"></a>任意非平凡树都至少有两片叶(可用握手定理,m=n-1和不等式证明)</h2><h2 id="生成树-图G的生成子图是树-则称之为图G的生成树"><a href="#生成树-图G的生成子图是树-则称之为图G的生成树" class="headerlink" title="生成树:图G的生成子图是树,则称之为图G的生成树"></a>生成树:图G的生成子图是树,则称之为图G的生成树</h2><pre><code>1.  树枝:生成树的边2.  弦:图G中不在生成树中的边3.  补:生成树所有弦的集合</code></pre><h2 id="生成树的判定-充分必要条件是原图是连通的-下面的俩个方法没什么用"><a href="#生成树的判定-充分必要条件是原图是连通的-下面的俩个方法没什么用" class="headerlink" title="生成树的判定:充分必要条件是原图是连通的(下面的俩个方法没什么用)"></a>生成树的判定:充分必要条件是原图是连通的(下面的俩个方法没什么用)</h2><pre><code>1. 破圈法:删除回路中的边,直到剩下n-1条边2. 避圈法:选取不构成回路的边</code></pre><h2 id="求生成树的广度优先算法"><a href="#求生成树的广度优先算法" class="headerlink" title="求生成树的广度优先算法"></a>求生成树的广度优先算法</h2><pre><code>1. 先随便选一个节点,找与他相邻的节点做标记2. 最后保证每一个节点都有其前驱节点3. 不同的选择会有不同的生成树</code></pre><h2 id="最小生成树"><a href="#最小生成树" class="headerlink" title="最小生成树"></a>最小生成树</h2><pre><code>1. 最小生成树:对于连通赋权图,要使最后的生成树权和最小2. kruskal算法:    1. 一共取n-1条边    2. 每次取不构成回路的最小权边3. Prim算法:(每一步一定是树,不需要验证是否有回路)    1. 取一个节点    2. 在剩下的节点中找与已取节点邻接的最小权边    3. 直到取完所有节点</code></pre><h2 id="根树-非平凡有向树-且有一个节点入度为0-其他节点入度为1"><a href="#根树-非平凡有向树-且有一个节点入度为0-其他节点入度为1" class="headerlink" title="根树:非平凡有向树,且有一个节点入度为0,其他节点入度为1"></a>根树:非平凡有向树,且有一个节点入度为0,其他节点入度为1</h2><pre><code>1. 分支点:内点和根的统称2. 层数:从根到任意节点的通路长度</code></pre><h2 id="k元完全树-每个分支点恰好有k个儿子-而不是有k个节点"><a href="#k元完全树-每个分支点恰好有k个儿子-而不是有k个节点" class="headerlink" title="k元完全树:每个分支点恰好有k个儿子(而不是有k个节点)"></a>k元完全树:<strong>每个分支点恰好有k个儿子</strong>(而不是有k个节点)</h2><pre><code>1.  若叶为t,分支数为i则:(k-1)*i=t-1         证明: t+i-1=m=k(出度为边数)2. 二元完全树中:    1. i=t-1    2. m=n-1=i+t-1=2t-2</code></pre><h2 id="根树变成二叉树"><a href="#根树变成二叉树" class="headerlink" title="根树变成二叉树:"></a>根树变成二叉树:</h2><pre><code>1. 保留每个父亲和最左边儿子的连线,其他删掉2. 从左向右连线,即弟弟变右儿子3. 反过来就是右儿子变弟弟</code></pre><h2 id="森林变二叉树"><a href="#森林变二叉树" class="headerlink" title="森林变二叉树:"></a>森林变二叉树:</h2><pre><code>1. 先把每个树变成二叉树(会导致所有二叉树的根没有右子树)2. 除第一个二叉树,把每个剩下的树作为作为左边树的右子树</code></pre><h2 id="树的权-为每一层中叶的权值-叶所在的层数之和"><a href="#树的权-为每一层中叶的权值-叶所在的层数之和" class="headerlink" title="树的权:为每一层中叶的权值*叶所在的层数之和"></a>树的权:为每一层中叶的权值*叶所在的层数之和</h2><h2 id="最优树-树的权最小"><a href="#最优树-树的权最小" class="headerlink" title="最优树:树的权最小"></a>最优树:树的权最小</h2><pre><code>1. 赫夫曼算法:可以解决最小前缀码和分硬币等问题    1. 建立集合存放权值(字母出现的概率等)    2. 取出两个最小的权值,得到其父亲v    3. 把v加入原集合重复操作,直到集合中只有一个元素</code></pre><h2 id="决策树-每个分支点都是一个问题"><a href="#决策树-每个分支点都是一个问题" class="headerlink" title="决策树:每个分支点都是一个问题"></a>决策树:每个分支点都是一个问题</h2><pre><code>1. 5硬币问题:有一个硬币和其他重量不同用天平需要称几下,三下2. 推理从根到叶3. ![决策树-五硬币](/images/决策树-五硬币.jpg)</code></pre><h2 id="博弈树-7根火柴问题-甲乙依次取一根或两根火柴-但不能不取-取走最后一根的人胜利"><a href="#博弈树-7根火柴问题-甲乙依次取一根或两根火柴-但不能不取-取走最后一根的人胜利" class="headerlink" title="博弈树:7根火柴问题:甲乙依次取一根或两根火柴,但不能不取,取走最后一根的人胜利"></a>博弈树:7根火柴问题:甲乙依次取一根或两根火柴,但不能不取,取走最后一根的人胜利</h2><pre><code>1. 胜利的关键在于把3的倍数个火柴留给对方取2. 这样无论对方取一根还是两根你都可以再次把3的倍数的火柴给对方3. 当最后剩下3根时,对方只能去一根或者两根你就赢了4. 此树要从叶向根推理</code></pre><p>   <img src="/images/博弈树.png" alt="博弈树"></p><h2 id="关键道路法-用于合理安排工期-规则是作业-lt-v5-v6-gt-表示的作业要在-lt-s-v3-gt-lt-v3-v5-gt-lt-s-v5-gt-三个作业完成之后才能开始-求出从s到t的最低限度时间-也叫关键道路-第一个生成树"><a href="#关键道路法-用于合理安排工期-规则是作业-lt-v5-v6-gt-表示的作业要在-lt-s-v3-gt-lt-v3-v5-gt-lt-s-v5-gt-三个作业完成之后才能开始-求出从s到t的最低限度时间-也叫关键道路-第一个生成树" class="headerlink" title="关键道路法,用于合理安排工期:规则是作业&lt;v5,v6&gt;表示的作业要在&lt;s,v3&gt;,&lt;v3,v5&gt;,&lt;s,v5&gt;三个作业完成之后才能开始,求出从s到t的最低限度时间,也叫关键道路(第一个生成树)"></a>关键道路法,用于合理安排工期:规则是作业&lt;v5,v6&gt;表示的作业要在&lt;s,v3&gt;,&lt;v3,v5&gt;,&lt;s,v5&gt;三个作业完成之后才能开始,求出从s到t的最低限度时间,也叫关键道路(第一个生成树)</h2><p> <img src="/images/关键道路法-最后结果.jpg" alt="关键道路法-最后结果"></p><pre><code>1. 为了不耽误整个工程的总体完成时间,并且对于非关键作业保证其机动性,有两个问题我们最为关心:    1. ### 作业&lt;Vm,Vn&gt;最早什么时候能开始        1. 计算从s到各点的最长道路.权值和就是作业最早开始时间</code></pre><p><img src="/images/关键道路最早.png" alt="关键道路最早"></p><pre><code>1. ### 作业&lt;Vm,Vn&gt;最晚什么时候必须结束    1. 计算从各节点到t的最长道路.项目整体完成时间-各节点权值和就是最晚结束时间</code></pre><p><img src="/images/关键道路最迟.png" alt="关键道路最迟"></p><pre><code>1. 各作业的机动时间计算方法:设作业为&lt;Vn,Vm&gt;,节点Vm的最晚结束时间-节点Vn的最早开始时间(也就是作业的最早开始时间)加上作业所需的时间,这么算的原因是任务可能不在关键道路中,在关键道路中的节点可以直接用末节点的两个时间相减</code></pre>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;树&quot;&gt;&lt;a href=&quot;#树&quot; class=&quot;headerlink&quot; title=&quot;树&quot;&gt;&lt;/a&gt;树&lt;/h2&gt;&lt;hr&gt;
+&lt;h2 id=&quot;平凡树：就是平凡图&quot;&gt;&lt;a href=&quot;#平凡树：就是平凡图&quot; class=&quot;headerlink&quot; title=&quot;平凡树：就是
       
     
     </summary>
@@ -142,19 +164,16 @@
     <link href="https://yangtianbo.top/2018/06/24/%E8%8B%B1%E8%AF%AD%E4%BD%9C%E6%96%87%E7%B4%A0%E6%9D%90/"/>
     <id>https://yangtianbo.top/2018/06/24/英语作文素材/</id>
     <published>2018-06-24T12:59:54.000Z</published>
-    <updated>2018-06-24T13:04:07.977Z</updated>
+    <updated>2018-06-24T15:02:14.529Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="英语作文笔记"><a href="#英语作文笔记" class="headerlink" title="英语作文笔记"></a>英语作文笔记</h2><hr><ol><li>常用替换<ol><li>before=prior to</li><li>important=vitally matter=essential=  </li><li>A host of=a lot of</li><li>It’s indisputable that …=There is no doubt that …</li></ol></li><li>常用短语<ol><li>be armed with</li><li>enrich our knowledge reserves</li></ol></li><li>常用句型<ol><li>Just as the remark goes,” … “</li><li></li></ol></li><li>开头句式<ol><li>With the rapid development of society, …</li><li>When pinched between A or B, many people find themselves in a dilemma.</li></ol></li><li>过渡连接<ol><li>On the one hand, from the standpoint of an nation, …..<br>On the other hand, from the perspective of individuals, …  </li><li>First and foremost,…</li></ol></li><li>结尾句式 <ol><li>All we need is our utmost effort to do something …</li><li>As mentioned above, …</li></ol></li></ol>]]></content>
+    <content type="html"><![CDATA[<h2 id="英语作文笔记"><a href="#英语作文笔记" class="headerlink" title="英语作文笔记"></a>英语作文笔记</h2><hr><h2 id="常用替换"><a href="#常用替换" class="headerlink" title="常用替换"></a>常用替换</h2><pre><code>1. before=prior to2. important=vitally matter=essential=  3. A host of=a lot of4. It&apos;s indisputable that ...=There is no doubt that ...5. beautiful=imposing=spectacular</code></pre><h2 id="常用短语"><a href="#常用短语" class="headerlink" title="常用短语"></a>常用短语</h2><pre><code>1.  be armed with2.  enrich our knowledge reserves</code></pre><h2 id="常用句型"><a href="#常用句型" class="headerlink" title="常用句型"></a>常用句型</h2><pre><code>1. Just as the remark goes,&quot; ... &quot;2. </code></pre><h2 id="开头句式"><a href="#开头句式" class="headerlink" title="开头句式"></a>开头句式</h2><pre><code>1. With the rapid development of society, ...2. When pinched between A or B, many people find themselves in a dilemma.</code></pre><h2 id="过渡连接"><a href="#过渡连接" class="headerlink" title="过渡连接"></a>过渡连接</h2><pre><code>1. On the one hand, from the standpoint of an nation, .....     On the other hand, from the perspective of individuals, ...  2. First and foremost,...</code></pre><h2 id="结尾句式"><a href="#结尾句式" class="headerlink" title="结尾句式"></a>结尾句式</h2><pre><code>1. All we need is our utmost effort to do something ...2. As mentioned above, ...</code></pre>]]></content>
     
     <summary type="html">
     
       
       
         &lt;h2 id=&quot;英语作文笔记&quot;&gt;&lt;a href=&quot;#英语作文笔记&quot; class=&quot;headerlink&quot; title=&quot;英语作文笔记&quot;&gt;&lt;/a&gt;英语作文笔记&lt;/h2&gt;&lt;hr&gt;
-&lt;ol&gt;
-&lt;li&gt;常用替换&lt;ol&gt;
-&lt;li&gt;before=prior to&lt;/li&gt;
-&lt;li&gt;impor
+&lt;h2 id=&quot;常用替换&quot;&gt;&lt;a href=&quot;#常用替换&quot; class=&quot;headerlink&quot; tit
       
     
     </summary>
